@@ -63,6 +63,19 @@ Semua akses data aplikasi lewat `assets/js/data/store.js`. Koleksi di bawah bisa
 ### `permasalahan` — RB Tematik
 `{ id, indikatorId, pdId, permasalahan, sasaran, indikator, target, satuan, realisasi, catatan, portalId: {permasalahan_id, indikator_permasalahan_id} }`
 
+### `pengguna` — akun login
+| kolom | tipe | keterangan |
+|---|---|---|
+| id, username | string | username unik, huruf kecil (`^[a-z0-9][a-z0-9._-]{2,29}$`) |
+| nama | string | nama pada akun |
+| role | `admin` \| `pd` | admin = Biro Organisasi |
+| pdId | string \| null | PD yang diwakili akun (hak akses mengikuti koleksi `akses`) |
+| salt, hash, iter | string, string, int | PBKDF2-SHA256, 256 bit; password tidak pernah disimpan |
+| aktif, wajibGanti | bool | |
+| gagal, kunciSampai | int, epoch ms | 5 kali gagal → terkunci 10 menit |
+| sesiVersi | int | dinaikkan saat reset/ganti password/nonaktif → sesi lama tidak berlaku |
+| dibuat, loginTerakhir | tanggal ISO | |
+
 ### Lainnya
 - `infografis`: `{ id, judul, kategori, tanggal, alt, gambar, tampil }` — urutan array = urutan tampil.
 - `imporLog`: `{ id, tanggal, periode, baris, oleh }`

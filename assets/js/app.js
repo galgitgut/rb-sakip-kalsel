@@ -1,7 +1,8 @@
 // Kerangka aplikasi internal: login, menu atas, sub-tab, dan perpindahan halaman (#/bagian/sub).
 import * as db from './data/store.js';
-import { currentUser, login, logout } from './auth.js';
+import { currentUser, login } from './auth.js';
 import { esc, toast } from './util.js';
+import { topbarHtml, bindTopbar, passwordDialog } from './nav.js';
 import { APP } from './config.js';
 
 import * as rencanaGeneral from './pages/rencana-general.js';
@@ -15,6 +16,7 @@ import * as verifikasi from './pages/verifikasi.js';
 import * as ekspor from './pages/ekspor.js';
 import * as infografis from './pages/infografis.js';
 import * as impor from './pages/impor.js';
+import * as pengguna from './pages/pengguna.js';
 
 const ALL = ['admin', 'pd'];
 const SECTIONS = {
@@ -39,6 +41,7 @@ const SECTIONS = {
   admin: {
     label: 'Admin', roles: ['admin'], tabs: [
       { key: 'verifikasi', label: 'Verifikasi Tag', mod: verifikasi, roles: ['admin'], count: () => db.where('tag', (t) => t.status === 'diajukan').length },
+      { key: 'pengguna', label: 'Pengguna', mod: pengguna, roles: ['admin'] },
       { key: 'indikator', label: 'Master Indikator', mod: indikator, roles: ['admin'] },
       { key: 'akses', label: 'Hak Akses & Pembagian', mod: akses, roles: ['admin'] },
       { key: 'ekspor', label: 'Ekspor KemenPANRB', mod: ekspor, roles: ['admin'] },
@@ -56,33 +59,43 @@ function parseHash() {
 }
 const defaultPath = (user) => (user.role === 'admin' ? 'admin/verifikasi' : 'rb-general/tagging');
 
-function renderLogin() {
-  const pds = db.all('pd');
-  app.innerHTML = `<main class="wrap" style="max-width:560px;padding-top:48px;padding-bottom:48px">
+function renderLogin(msg = '') {
+  app.innerHTML = `<main class="wrap" style="max-width:520px;padding-top:48px;padding-bottom:48px">
     <div class="card" style="gap:18px">
       <div class="stack" style="gap:4px"><span class="small muted">${esc(APP.instansi)}</span><h1 style="font-size:26px">Masuk ke ${esc(APP.nama)}</h1>
-        <p class="muted" style="margin:0">Prototipe: pilih akun untuk mencoba. Di versi live, setiap akun masuk dengan email dan kata sandi.</p></div>
-      <form id="f-login" class="stack" style="gap:14px">
-        <label class="field">Akun
-          <select name="akun" required>
-            <option value="admin">Admin · Biro Organisasi (verifikator)</option>
-            <optgroup label="PD Pengampu">${pds.map((p) => `<option value="pd:${p.id}">${esc(p.nama)}</option>`).join('')}</optgroup>
-          </select>
-        </label>
-        <button class="btn" type="submit">Masuk</button>
+        <p class="muted" style="margin:0">Gunakan username dan password yang diberikan admin Biro Organisasi.</p></div>
+      <form id="f-login" class="stack" style="gap:14px" novalidate>
+        <label class="field">Username<input name="username" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
+        <label class="field">Password
+          <span class="inline" style="flex-wrap:nowrap;gap:8px"><input name="password" type="password" autocomplete="current-password" required style="flex:1 1 auto;min-width:0">
+          <button type="button" class="btn secondary small" id="btn-lihat" aria-pressed="false">Lihat</button></span></label>
+        <p id="login-msg" class="note warn small" role="alert" style="margin:0;${msg ? '' : 'display:none'}">${esc(msg)}</p>
+        <button class="btn" type="submit" id="btn-masuk">Masuk</button>
       </form>
+      <details class="small"><summary style="cursor:pointer;color:var(--primary);font-weight:600">Akun uji coba prototipe</summary>
+        <div class="box" style="margin-top:8px;line-height:22px">Admin: <b>admin</b> / <b>admin2026</b><br>PD: kode PD sebagai username, password <b>demo2026</b><br>
+        contoh <b>diskominfo</b>, <b>bappeda</b>, <b>bkd</b>, <b>inspektorat</b>, <b>biro-org</b></div></details>
       <a href="index.html" class="small">← Kembali ke Beranda publik</a>
     </div></main>`;
-  app.querySelector('#f-login').addEventListener('submit', (e) => {
+  const f = app.querySelector('#f-login');
+  const pw = f.querySelector('input[name=password]');
+  app.querySelector('#btn-lihat').addEventListener('click', (e) => {
+    const show = pw.type === 'password'; pw.type = show ? 'text' : 'password';
+    e.target.setAttribute('aria-pressed', String(show)); e.target.textContent = show ? 'Sembunyikan' : 'Lihat';
+  });
+  f.querySelector('input[name=username]').focus();
+  f.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const v = new FormData(e.target).get('akun');
-    if (v === 'admin') login({ role: 'admin', pdId: null, nama: 'Admin · Biro Organisasi' });
-    else {
-      const pd = db.get('pd', v.slice(3));
-      login({ role: 'pd', pdId: pd.id, nama: pd.nama, singkatan: pd.singkatan });
-    }
-    history.replaceState(null, '', '#/' + defaultPath(currentUser()));
-    renderApp();
+    const fd = new FormData(f);
+    const btn = app.querySelector('#btn-masuk');
+    btn.disabled = true; btn.textContent = 'Memeriksa…';
+    try {
+      const res = await login(fd.get('username'), fd.get('password'));
+      if (!res.ok) { renderLogin(res.msg); app.querySelector('input[name=username]').value = fd.get('username'); app.querySelector('input[name=password]').focus(); return; }
+      const next = parseHash().sec ? location.hash : '#/' + defaultPath(res.user);
+      history.replaceState(null, '', next);
+      renderApp();
+    } catch (err) { renderLogin(err.message); }
   });
 }
 
@@ -99,17 +112,8 @@ async function renderApp() {
   const tab = tabs.find((t) => t.key === sub) || tabs[0];
   history.replaceState(null, '', `#/${sec}/${tab.key}`);
 
-  const navItems = Object.entries(SECTIONS).filter(([, s]) => s.roles.includes(user.role));
   app.innerHTML = `
-  <header class="topbar"><div class="in">
-    <a class="logo" href="index.html"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><b>${esc(APP.nama)}</b></a>
-    <nav class="topnav" aria-label="Menu utama">
-      <a href="index.html">Beranda</a>
-      ${navItems.map(([k, s]) => `<a href="#/${k}" ${k === sec ? 'aria-current="page"' : ''}>${esc(s.label)}</a>`).join('')}
-    </nav>
-    <div class="userbox"><span><span class="muted">Masuk sebagai</span><b>${esc(user.role === 'admin' ? user.nama : `PD · ${user.singkatan || user.nama}`)}</b></span>
-      <button type="button" class="btn secondary small" id="btn-logout">Keluar</button></div>
-  </div></header>
+  ${topbarHtml(user, sec)}
   <div class="page-wide">
     ${tabs.length > 1 ? `<nav class="subtabs" aria-label="${esc(section.label)}">${tabs.map((t) => {
       const n = t.count ? t.count() : 0;
@@ -117,7 +121,8 @@ async function renderApp() {
     }).join('')}</nav>` : ''}
     <main id="page" class="stack" style="gap:20px"></main>
   </div>`;
-  app.querySelector('#btn-logout').addEventListener('click', () => { logout(); history.replaceState(null, '', location.pathname); renderApp(); });
+  bindTopbar(app, { onLogout: () => { history.replaceState(null, '', location.pathname); renderApp(); } });
+  if (user.wajibGanti) passwordDialog({ wajib: true, onDone: renderApp });
   document.title = `${tab.label} · ${section.label} · ${APP.nama}`;
   const el = app.querySelector('#page');
   const ctx = { user, sec, sub: tab.key };

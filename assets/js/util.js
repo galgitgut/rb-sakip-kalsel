@@ -40,7 +40,7 @@ export function toast(msg) {
 }
 
 // Dialog sederhana; html berisi <form method="dialog">.
-export function openDialog(html, onSubmit) {
+export function openDialog(html, onSubmit, opts = {}) {
   const dlg = document.createElement('dialog');
   dlg.innerHTML = html;
   document.body.appendChild(dlg);
@@ -57,6 +57,7 @@ export function openDialog(html, onSubmit) {
     }
   });
   dlg.addEventListener('close', () => dlg.remove());
+  if (opts.wajib) dlg.addEventListener('cancel', (e) => e.preventDefault()); // tidak bisa ditutup dengan Esc
   dlg.showModal();
   return dlg;
 }

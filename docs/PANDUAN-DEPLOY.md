@@ -55,15 +55,17 @@ Dipakai bila repositori harus privat, atau saat masuk tahap 2.
 
 ## E. Cara mencoba prototipe
 
-1. Buka Beranda → **Masuk (Admin / PD)**.
-2. Pilih **PD Pengampu · Dinas Komunikasi dan Informatika** → **RB General → Tagging Sub Kegiatan** → centang beberapa sub kegiatan → **Tag & ajukan verifikasi**.
-3. **Keluar** → masuk sebagai **Admin** → **Admin → Verifikasi Tag** → centang semua → setujui.
+1. Buka Beranda → **Masuk**.
+2. Masuk dengan username `diskominfo`, password `demo2026` → **RB General → Tagging Sub Kegiatan** → centang beberapa sub kegiatan → **Ajukan verifikasi** di panel kanan.
+3. **Keluar** → masuk dengan `admin` / `admin2026` → **Admin → Verifikasi Tag** → centang semua → setujui.
 4. Lihat hasilnya di **RB General → Tabel Rencana Aksi**, **Realisasi RB**, dan **Beranda**.
 5. **Admin → Ekspor KemenPANRB** → unduh file per indikator lalu buka di Excel.
-6. Untuk mencoba RB Tematik, masuk sebagai **Bappeda** → **RB Tematik → Isian RB Tematik**.
+6. Untuk mencoba RB Tematik, masuk sebagai `bappeda` / `demo2026` → **RB Tematik → Isian RB Tematik**.
+7. Coba **Admin → Pengguna** → *Tambah pengguna* atau *Reset password*, lalu login dengan akun itu.
 
 ## Hal penting di tahap 1
 
 - **Data tersimpan di browser masing-masing.** Perubahan yang Anda buat hanya terlihat di browser Anda sendiri, sedangkan orang lain melihat data awal. Data bersama baru tersedia setelah tahap 2 (Firebase).
-- **Login masih simulasi** (pilih akun tanpa kata sandi). Jangan memasukkan data rahasia.
+- **Akun dan password tersimpan di browser.** Mekanisme login sudah seperti versi akhir, tetapi belum aman untuk data sungguhan karena pemeriksaannya masih di browser. Jangan memasukkan data rahasia.
+- **Akun uji coba:** `admin` / `admin2026`; PD: kode PD / `demo2026`.
 - Untuk mengembalikan data uji coba ke awal: **Admin → Impor Sinergi → Reset data prototipe**.

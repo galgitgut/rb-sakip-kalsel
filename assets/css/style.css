@@ -34,7 +34,8 @@ img { max-width: 100%; display: block; }
 .small { font-size: 13px; }
 .xs { font-size: 12px; }
 .bold { font-weight: 700; }
-.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+.table-wrap, .table-scroll { position: relative; }
 :focus-visible { outline: 3px solid #5B9BD5; outline-offset: 2px; }
 
 /* ---------- tata letak aplikasi ---------- */

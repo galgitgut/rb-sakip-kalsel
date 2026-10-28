@@ -10,6 +10,15 @@ Tujuan: semua pengguna melihat data yang sama, dan setiap akun PD masuk dengan e
 
 Cloud Functions **tidak** dipakai (butuh paket berbayar). Penarikan API Sinergi nanti bisa lewat GitHub Actions terjadwal.
 
+## Catatan penting: password yang disiapkan admin
+
+Prototipe meniru KaRamBa: admin membuat akun dan menentukan/me-reset password orang lain. Di Firebase:
+- **Membuat akun** dari halaman admin bisa dilakukan di paket gratis.
+- **Me-reset password akun lain** (tanpa email) hanya bisa lewat server (Firebase Admin SDK di Cloud Functions), yang mensyaratkan paket **Blaze**: bayar sesuai pemakaian dan wajib kartu/rekening penagihan. Untuk skala ±50 akun pemakaiannya diperkirakan tetap di dalam kuota gratis, tetapi perlu dipastikan sebelum diaktifkan.
+- Alternatif tanpa Blaze: reset lewat **email** (pengguna menerima tautan ganti password) — butuh alamat email aktif tiap akun.
+
+Pilihan ini perlu diputuskan sebelum tahap 2 dimulai.
+
 ## Yang perlu disiapkan Galih
 1. Buka https://console.firebase.google.com → **Add project** → nama mis. `rb-sakip-kalsel` (Google Analytics boleh dimatikan).
 2. **Build → Authentication → Get started → Email/Password → Enable.**

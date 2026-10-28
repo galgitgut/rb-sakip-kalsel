@@ -4,7 +4,7 @@ Prototipe aplikasi Reformasi Birokrasi (RB) Pemerintah Provinsi Kalimantan Selat
 
 **Konsep inti:** rencana aksi RB General dan RB Tematik tidak diketik ulang. Rencana aksi disusun dengan **men-tag sub kegiatan** PD pengampu yang sudah ada di Sinergi. Target triwulan, anggaran, dan realisasinya ikut tertarik dari Sinergi. Hasilnya bisa diekspor langsung ke **template KemenPANRB**.
 
-> Prototipe tahap 1: login masih simulasi, data tersimpan di browser masing-masing pengguna, data Sinergi masih dummy.
+> Prototipe tahap 1: data tersimpan di browser masing-masing pengguna, data Sinergi masih dummy. Login sudah memakai username + password yang disiapkan admin, tetapi pemeriksaannya masih di browser (tahap 2 pindah ke server).
 
 ## Halaman
 
@@ -16,7 +16,17 @@ Prototipe aplikasi Reformasi Birokrasi (RB) Pemerintah Provinsi Kalimantan Selat
 | `app.html#/rb-tematik/tabel` | Admin & PD | Tabel Rencana Aksi Tematik: tema → indikator roadmap → permasalahan → rencana aksi |
 | `app.html#/rb-tematik/isian` | PD pengampu | Isian permasalahan, indikator permasalahan, rencana aksi + fokus intervensi |
 | `app.html#/realisasi/general` · `/tematik` | Admin & PD | Rencana aksi + realisasi output & anggaran per triwulan (hanya baca, unduh .xlsx) |
-| `app.html#/admin/…` | Admin | Satu halaman dengan tab: Verifikasi, Master Indikator, Hak Akses & Pembagian, Ekspor KemenPANRB, Infografis Beranda, Impor Sinergi & Data |
+| `app.html#/admin/…` | Admin | Satu halaman dengan tab: Verifikasi, Pengguna, Master Indikator, Hak Akses & Pembagian, Ekspor KemenPANRB, Infografis Beranda, Impor Sinergi & Data |
+
+Setelah login, Beranda memakai menu yang sama dengan aplikasi (tanpa tombol Masuk).
+
+## Login & akun
+
+- Admin membuat akun di **Admin → Pengguna**: satuan, atau sekaligus untuk semua PD pengampu yang belum punya akun. Password acak ditampilkan **sekali** (bisa disalin/diunduh .xlsx).
+- Admin bisa reset password, menonaktifkan/mengaktifkan akun, dan membuka akun yang terkunci.
+- Akun baru / hasil reset wajib mengganti password saat login pertama. Setiap pengguna bisa **Ganti password** dari menu atas.
+- Password disimpan sebagai hash PBKDF2-SHA256 + salt. 5 kali salah → akun terkunci 10 menit. Reset password / nonaktif mengeluarkan semua sesi akun itu.
+- Akun uji coba: `admin` / `admin2026`; akun PD memakai kode PD sebagai username (mis. `diskominfo`, `bappeda`) dengan password `demo2026`.
 
 ## Sumber data awal
 
@@ -33,7 +43,8 @@ index.html, app.html        halaman
 assets/css/style.css        tampilan
 assets/js/config.js         pengaturan (mode data, tahun, triwulan berjalan)
 assets/js/data/store.js     SATU-SATUNYA pintu akses data (ganti adapter di sini)
-assets/js/auth.js           login (simulasi)
+assets/js/auth.js           login, hash password, sesi, kelola akun
+assets/js/nav.js            menu atas (dipakai Beranda & aplikasi)
 assets/js/calc.js           rumus capaian, kelengkapan pelaporan, serapan
 assets/js/ringkasan.js      isi Beranda (ringkasan, per koordinator, per indikator, perlu perhatian)
 assets/js/excel.js          ekspor template KemenPANRB & impor

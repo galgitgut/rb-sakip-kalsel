@@ -8,8 +8,10 @@ Hasil: assets/data/seed.json
 - Permasalahan & rencana aksi Tematik: data asli dari template KemenPANRB.
 - Sub kegiatan RB General, realisasi, dan tag General: DUMMY (format Sinergi belum diriset).
 """
+import hashlib
 import json
 import random
+import secrets
 import sys
 from pathlib import Path
 
@@ -147,6 +149,23 @@ PEMBAGIAN = {
         {"bagian": "[Kelompok IKU makro 3]", "bobot": None, "pdId": "inspektorat"},
     ],
 }
+
+
+PBKDF2_ITER = 100_000
+DEMO_PW_ADMIN = "admin2026"   # akun uji coba prototipe — ganti setelah login
+DEMO_PW_PD = "demo2026"
+
+
+def hash_pw(pw, salt, it=PBKDF2_ITER):
+    """Sama persis dengan hashPassword() di assets/js/auth.js (PBKDF2-SHA256, 256 bit, hex)."""
+    return hashlib.pbkdf2_hmac("sha256", pw.encode(), salt.encode(), it).hex()
+
+
+def akun(uid, username, nama, role, pd_id, pw):
+    salt = secrets.token_hex(8)
+    return {"id": uid, "username": username, "nama": nama, "role": role, "pdId": pd_id,
+            "salt": salt, "hash": hash_pw(pw, salt), "iter": PBKDF2_ITER, "aktif": True,
+            "dibuat": "2026-10-28", "loginTerakhir": None, "gagal": 0, "kunciSampai": 0, "wajibGanti": False}
 
 
 def num(v):
@@ -338,6 +357,9 @@ def main(path_general, path_tematik):
         {"id": "ig1", "judul": "Capaian RB Triwulan III 2026", "kategori": "Rilis capaian", "tanggal": "2026-10-20", "alt": "Contoh infografis capaian RB triwulan III", "gambar": "", "tampil": True},
         {"id": "ig2", "judul": "Apa itu RB General dan RB Tematik?", "kategori": "Penjelasan", "tanggal": "2026-09-02", "alt": "Contoh infografis penjelasan RB", "gambar": "", "tampil": True},
         {"id": "ig3", "judul": "Langkah Pemprov menurunkan kemiskinan", "kategori": "RB Tematik", "tanggal": "2026-08-15", "alt": "Contoh infografis RB Tematik kemiskinan", "gambar": "", "tampil": True},
+    ]
+    data["pengguna"] = [akun("u-admin", "admin", "Administrator (Biro Organisasi)", "admin", None, DEMO_PW_ADMIN)] + [
+        akun(f"u-{pid}", pid, full, "pd", pid, DEMO_PW_PD) for pid, _s, full in PD
     ]
     data["imporLog"] = [
         {"id": "log1", "tanggal": "2026-10-14", "periode": "Realisasi s.d. Triwulan III", "baris": len(subkeg), "oleh": "Admin (seed)"},

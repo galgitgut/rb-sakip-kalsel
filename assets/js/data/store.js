@@ -2,12 +2,12 @@
 // Saat pindah ke Firebase atau ke API pengembang, cukup ganti adapter di bawah,
 // halaman-halaman lain tidak perlu diubah.
 //
-// Koleksi: pd, indikator, akses, subkegiatan, tag, permasalahan, infografis, imporLog, eksporStatus
+// Koleksi: pd, indikator, akses, subkegiatan, tag, permasalahan, infografis, imporLog, eksporStatus, pengguna
 // Bentuk tiap koleksi dijelaskan di docs/MODEL-DATA.md
 import { DATA_MODE } from '../config.js';
 
-const KEY = 'rbsakip:v2'; // naikkan versi bila bentuk data berubah
-const COLLECTIONS = ['pd', 'indikator', 'akses', 'subkegiatan', 'tag', 'permasalahan', 'infografis', 'imporLog', 'eksporStatus'];
+const KEY = 'rbsakip:v3'; // naikkan versi bila bentuk data berubah
+const COLLECTIONS = ['pd', 'indikator', 'akses', 'subkegiatan', 'tag', 'permasalahan', 'infografis', 'imporLog', 'eksporStatus', 'pengguna'];
 let cache = null;
 
 // ---------- adapter lokal (localStorage) ----------

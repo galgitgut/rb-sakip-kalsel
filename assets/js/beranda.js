@@ -4,6 +4,17 @@ import * as C from './calc.js';
 import { APP } from './config.js';
 import { esc, fmtDate } from './util.js';
 import { TW_LABEL, ringkasanTab, koordinatorTab, indikatorTab, perhatianTab } from './ringkasan.js';
+import { currentUser } from './auth.js';
+import { topbarHtml, publicHeaderHtml, bindTopbar } from './nav.js';
+
+const hdr = document.getElementById('hdr');
+
+// Belum login: header publik + tombol Masuk. Sudah login: menu aplikasi yang sama dengan app.html.
+function renderHeader() {
+  const user = currentUser();
+  hdr.innerHTML = user ? topbarHtml(user, 'beranda') : publicHeaderHtml();
+  if (user) bindTopbar(hdr, { onLogout: renderHeader });
+}
 
 const root = document.getElementById('beranda');
 const TABS = [['ringkasan', 'Ringkasan'], ['koordinator', 'Per Koordinator'], ['indikator', 'Per Indikator'], ['perhatian', 'Perlu Perhatian']];
@@ -59,4 +70,4 @@ function render() {
   root.querySelector('#btn-pdf').addEventListener('click', () => window.print());
 }
 
-db.init().then(render).catch((e) => { root.innerHTML = `<p class="empty">${esc(e.message)}</p>`; });
+db.init().then(() => { renderHeader(); render(); }).catch((e) => { root.innerHTML = `<p class="empty">${esc(e.message)}</p>`; });
