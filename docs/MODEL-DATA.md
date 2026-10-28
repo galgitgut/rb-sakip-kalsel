@@ -41,8 +41,8 @@ Semua akses data aplikasi lewat `assets/js/data/store.js`. Koleksi di bawah bisa
 | nama, indikatorOutput, satuan | string | |
 | target | number[4] | target TW1–TW4 |
 | pagu | number | pagu sub kegiatan |
-| realisasi | (number\|null)[4] | realisasi output TW1–TW4 |
-| realisasiAnggaran | number | realisasi anggaran kumulatif |
+| realisasi | (number\|null)[4] | realisasi output TW1–TW4; `null` = belum dilaporkan |
+| realisasiAnggaran | (number\|null)[4] | realisasi anggaran per triwulan (bukan kumulatif) |
 
 ### `tag` — rencana aksi (sub kegiatan yang di-tag ke indikator)
 | kolom | tipe | keterangan |
@@ -71,12 +71,14 @@ Semua akses data aplikasi lewat `assets/js/data/store.js`. Koleksi di bawah bisa
 
 ## Aturan perhitungan (`assets/js/calc.js`)
 
-- Hanya tag **disetujui** yang dihitung di Beranda dan diekspor.
-- Capaian output per rencana aksi = Σ realisasi ÷ Σ target s.d. triwulan berjalan, maksimal 100%.
-- Capaian kelompok/tema = rata-rata capaian rencana aksinya.
-- Anggaran rencana aksi = pagu sub kegiatan (`pagu`) atau isian manual (`manual`).
-- Total anggaran Beranda menghitung **setiap sub kegiatan sekali** (nilai terbesar) agar tidak dobel.
-- Rencana anggaran per triwulan dibagi proporsional terhadap target output per triwulan.
+- Hanya tag **disetujui** yang dihitung di Beranda, Realisasi, dan ekspor.
+- **Terlapor** = realisasi output triwulan itu tidak kosong.
+- **Kelengkapan pelaporan** s.d. TW n = sel terlapor ÷ (jumlah rencana aksi × n).
+- **Capaian** rencana aksi s.d. TW n = Σ realisasi ÷ Σ target TW1..n (maks 100%); capaian kelompok = rata-rata.
+- **Anggaran** rencana aksi = pagu sub kegiatan (`pagu`) atau isian manual (`manual`).
+- **Realisasi anggaran** rencana aksi = realisasi anggaran sub kegiatan × (anggaran ÷ pagu); **serapan** = realisasi ÷ anggaran.
+- Dalam satu kelompok, sub kegiatan yang di-tag ke beberapa indikator dihitung sekali.
+- "Tren per triwulan" menghitung tiap triwulan sendiri (tidak kumulatif).
 
 ## Pemetaan ke template KemenPANRB
 

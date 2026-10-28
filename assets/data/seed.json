@@ -1059,12 +1059,17 @@
    ],
    "pagu": 310000000,
    "realisasi": [
-    0,
-    1,
+    null,
+    0.8,
     0,
     null
    ],
-   "realisasiAnggaran": 228000000.0,
+   "realisasiAnggaran": [
+    null,
+    146917000.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1082,12 +1087,17 @@
    ],
    "pagu": 425000000,
    "realisasi": [
-    1.1,
+    0.9,
     0,
-    1,
+    0.5,
     null
    ],
-   "realisasiAnggaran": 304000000.0,
+   "realisasiAnggaran": [
+    126884000.0,
+    0.0,
+    115307000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1106,11 +1116,16 @@
    "pagu": 520000000,
    "realisasi": [
     4.0,
-    8.0,
-    8.0,
+    null,
+    10,
     null
    ],
-   "realisasiAnggaran": 299600000.0,
+   "realisasiAnggaran": [
+    65203000.0,
+    null,
+    158885000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1128,12 +1143,17 @@
    ],
    "pagu": 380000000,
    "realisasi": [
-    0.8,
-    0.8,
-    0.5,
+    1.1,
+    0.9,
+    1,
     null
    ],
-   "realisasiAnggaran": 254300000.0,
+   "realisasiAnggaran": [
+    86670000.0,
+    94985000.0,
+    74206000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1151,12 +1171,17 @@
    ],
    "pagu": 240000000,
    "realisasi": [
-    0,
-    4.5,
-    2.5,
+    null,
+    4.0,
+    5,
     null
    ],
-   "realisasiAnggaran": 163700000.0,
+   "realisasiAnggaran": [
+    null,
+    60468000.0,
+    75553000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1174,12 +1199,17 @@
    ],
    "pagu": 180000000,
    "realisasi": [
-    9.0,
-    10,
+    8.0,
+    5.0,
     10,
     null
    ],
-   "realisasiAnggaran": 114200000.0,
+   "realisasiAnggaran": [
+    33255000.0,
+    25938000.0,
+    41748000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1198,11 +1228,16 @@
    "pagu": 290000000,
    "realisasi": [
     0,
-    1,
+    null,
     0,
     null
    ],
-   "realisasiAnggaran": 139000000.0,
+   "realisasiAnggaran": [
+    0.0,
+    null,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1220,12 +1255,17 @@
    ],
    "pagu": 1250000000,
    "realisasi": [
-    10,
-    7.5,
-    16.5,
+    8.0,
+    13.5,
+    13.5,
     null
    ],
-   "realisasiAnggaran": 746400000.0,
+   "realisasiAnggaran": [
+    195207000.0,
+    342123000.0,
+    303368000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1244,11 +1284,16 @@
    "pagu": 210000000,
    "realisasi": [
     0,
-    0,
-    0.9,
+    null,
+    1.1,
     null
    ],
-   "realisasiAnggaran": 110300000.0,
+   "realisasiAnggaran": [
+    0.0,
+    null,
+    174308000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1268,10 +1313,15 @@
    "realisasi": [
     0,
     2.5,
-    4.5,
+    5.5,
     null
    ],
-   "realisasiAnggaran": 206200000.0,
+   "realisasiAnggaran": [
+    0.0,
+    117348000.0,
+    119836000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1294,7 +1344,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 173400000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1312,12 +1367,17 @@
    ],
    "pagu": 190000000,
    "realisasi": [
+    0.9,
     1,
-    0.8,
-    0.8,
+    1,
     null
    ],
-   "realisasiAnggaran": 102200000.0,
+   "realisasiAnggaran": [
+    26833000.0,
+    40139000.0,
+    38892000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1335,12 +1395,17 @@
    ],
    "pagu": 450000000,
    "realisasi": [
-    0.9,
+    0.8,
     1,
     0,
     null
    ],
-   "realisasiAnggaran": 297500000.0,
+   "realisasiAnggaran": [
+    129254000.0,
+    113999000.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1358,12 +1423,17 @@
    ],
    "pagu": 330000000,
    "realisasi": [
-    0.8,
+    0.9,
     0,
     0,
     null
    ],
-   "realisasiAnggaran": 232400000.0,
+   "realisasiAnggaran": [
+    124731000.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1381,12 +1451,17 @@
    ],
    "pagu": 275000000,
    "realisasi": [
+    0.8,
     1,
-    1,
-    0.9,
+    0.5,
     null
    ],
-   "realisasiAnggaran": 158600000.0,
+   "realisasiAnggaran": [
+    60334000.0,
+    66898000.0,
+    57877000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1405,11 +1480,16 @@
    "pagu": 250000000,
    "realisasi": [
     0,
-    0,
-    0.8,
+    null,
+    0.9,
     null
    ],
-   "realisasiAnggaran": 149900000.0,
+   "realisasiAnggaran": [
+    0.0,
+    null,
+    240604000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1427,12 +1507,17 @@
    ],
    "pagu": 1450000000,
    "realisasi": [
-    0,
-    1.8,
+    null,
     1.6,
+    2,
     null
    ],
-   "realisasiAnggaran": 1001600000.0,
+   "realisasiAnggaran": [
+    null,
+    478245000.0,
+    370885000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1450,12 +1535,17 @@
    ],
    "pagu": 820000000,
    "realisasi": [
-    49.5,
-    79.2,
-    89.1,
+    99,
+    99,
+    108.9,
     null
    ],
-   "realisasiAnggaran": 466900000.0,
+   "realisasiAnggaran": [
+    145706000.0,
+    113223000.0,
+    174058000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1473,12 +1563,17 @@
    ],
    "pagu": 180000000,
    "realisasi": [
-    0.8,
-    1,
     0.5,
+    1.1,
+    0.8,
     null
    ],
-   "realisasiAnggaran": 103700000.0,
+   "realisasiAnggaran": [
+    29264000.0,
+    36656000.0,
+    44155000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1501,7 +1596,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 214400000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1519,12 +1619,17 @@
    ],
    "pagu": 410000000,
    "realisasi": [
-    0.8,
-    1,
     0.5,
+    0.5,
+    1,
     null
    ],
-   "realisasiAnggaran": 200400000.0,
+   "realisasiAnggaran": [
+    100601000.0,
+    74334000.0,
+    59762000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1542,12 +1647,17 @@
    ],
    "pagu": 360000000,
    "realisasi": [
-    2000,
-    3300.0,
-    2400.0,
+    2200.0,
+    1500.0,
+    3000,
     null
    ],
-   "realisasiAnggaran": 257800000.0,
+   "realisasiAnggaran": [
+    56137000.0,
+    75329000.0,
+    74158000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1566,11 +1676,16 @@
    "pagu": 150000000,
    "realisasi": [
     10,
-    11.0,
-    8.0,
+    9.0,
+    5.0,
     null
    ],
-   "realisasiAnggaran": 86800000.0,
+   "realisasiAnggaran": [
+    23506000.0,
+    30603000.0,
+    24118000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1588,12 +1703,17 @@
    ],
    "pagu": 480000000,
    "realisasi": [
-    10,
-    13.5,
-    15,
+    9.0,
+    16.5,
+    12.0,
     null
    ],
-   "realisasiAnggaran": 338300000.0,
+   "realisasiAnggaran": [
+    70044000.0,
+    91868000.0,
+    138910000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1611,12 +1731,17 @@
    ],
    "pagu": 230000000,
    "realisasi": [
-    0,
-    1.1,
-    1.1,
+    null,
+    0.5,
+    null,
     null
    ],
-   "realisasiAnggaran": 135000000.0,
+   "realisasiAnggaran": [
+    null,
+    72116000.0,
+    null,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1635,11 +1760,16 @@
    "pagu": 520000000,
    "realisasi": [
     36.0,
-    88.0,
+    80,
     48.0,
     null
    ],
-   "realisasiAnggaran": 273200000.0,
+   "realisasiAnggaran": [
+    67436000.0,
+    197018000.0,
+    148602000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1657,12 +1787,17 @@
    ],
    "pagu": 170000000,
    "realisasi": [
-    45.0,
     55.0,
-    50,
+    45.0,
+    40.0,
     null
    ],
-   "realisasiAnggaran": 104500000.0,
+   "realisasiAnggaran": [
+    31294000.0,
+    24879000.0,
+    29206000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1680,12 +1815,17 @@
    ],
    "pagu": 640000000,
    "realisasi": [
-    165.0,
-    160.0,
-    220.0,
+    150,
+    100.0,
+    200,
     null
    ],
-   "realisasiAnggaran": 379900000.0,
+   "realisasiAnggaran": [
+    112315000.0,
+    137178000.0,
+    151025000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1703,12 +1843,17 @@
    ],
    "pagu": 390000000,
    "realisasi": [
-    1.8,
-    1.8,
+    1.0,
     2,
+    1.0,
     null
    ],
-   "realisasiAnggaran": 209900000.0,
+   "realisasiAnggaran": [
+    63029000.0,
+    53840000.0,
+    57711000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1727,11 +1872,16 @@
    "pagu": 210000000,
    "realisasi": [
     0,
-    1,
+    0.5,
     0,
     null
    ],
-   "realisasiAnggaran": 103900000.0,
+   "realisasiAnggaran": [
+    0.0,
+    103167000.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1749,12 +1899,17 @@
    ],
    "pagu": 6000000.0,
    "realisasi": [
-    0,
-    0,
-    1.0,
+    null,
+    null,
+    1.1,
     null
    ],
-   "realisasiAnggaran": 2995000.0,
+   "realisasiAnggaran": [
+    null,
+    null,
+    4815000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1777,7 +1932,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 12372000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1797,10 +1957,15 @@
    "realisasi": [
     0,
     0,
-    0.5,
+    1.0,
     null
    ],
-   "realisasiAnggaran": 7850000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    10280000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1818,12 +1983,17 @@
    ],
    "pagu": 200000000.0,
    "realisasi": [
-    1.0,
-    1.0,
-    1.0,
+    0.9,
+    0.5,
+    1.1,
     null
    ],
-   "realisasiAnggaran": 133167000.0,
+   "realisasiAnggaran": [
+    43591000.0,
+    47264000.0,
+    33832000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1846,7 +2016,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 597000.0,
+   "realisasiAnggaran": [
+    0.0,
+    693000.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1869,7 +2044,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 1492000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1892,7 +2072,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 9763000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1912,10 +2097,15 @@
    "realisasi": [
     0,
     0,
-    5.0,
+    4.0,
     null
    ],
-   "realisasiAnggaran": 15312000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    21427000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1935,10 +2125,15 @@
    "realisasi": [
     0,
     0,
-    0,
+    null,
     null
    ],
-   "realisasiAnggaran": 72081000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    null,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1956,12 +2151,17 @@
    ],
    "pagu": 7320000.0,
    "realisasi": [
-    0.8,
     1.0,
-    0.8,
+    1.1,
+    0.5,
     null
    ],
-   "realisasiAnggaran": 4134000.0,
+   "realisasiAnggaran": [
+    1154000.0,
+    1038000.0,
+    1720000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -1981,10 +2181,15 @@
    "realisasi": [
     0,
     0,
-    0.8,
+    1.1,
     null
    ],
-   "realisasiAnggaran": 252967000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    194297000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2003,11 +2208,16 @@
    "pagu": 0,
    "realisasi": [
     0,
-    0,
+    null,
     0,
     null
    ],
-   "realisasiAnggaran": 0.0,
+   "realisasiAnggaran": [
+    0.0,
+    null,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2030,7 +2240,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 9064123000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2053,7 +2268,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 545610000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2076,7 +2296,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 693553000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2099,7 +2324,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 1483118000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2117,12 +2347,17 @@
    ],
    "pagu": 613757500.0,
    "realisasi": [
-    24.0,
-    52.0,
-    50.0,
+    15.0,
+    65.0,
+    90.0,
     null
    ],
-   "realisasiAnggaran": 287419000.0,
+   "realisasiAnggaran": [
+    45018000.0,
+    132992000.0,
+    162795000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2140,12 +2375,17 @@
    ],
    "pagu": 112123400.0,
    "realisasi": [
-    20.0,
-    40.0,
-    75.0,
+    25.0,
+    50.0,
+    null,
     null
    ],
-   "realisasiAnggaran": 64296000.0,
+   "realisasiAnggaran": [
+    9863000.0,
+    15700000.0,
+    null,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2164,11 +2404,16 @@
    "pagu": 16036405.0,
    "realisasi": [
     25.0,
-    45.0,
-    60.0,
+    55.0,
+    75.0,
     null
    ],
-   "realisasiAnggaran": 7911000.0,
+   "realisasiAnggaran": [
+    1531000.0,
+    2190000.0,
+    3264000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2186,12 +2431,17 @@
    ],
    "pagu": 97247000.0,
    "realisasi": [
-    27.5,
-    50.0,
-    60.0,
+    22.5,
+    55.0,
+    37.5,
     null
    ],
-   "realisasiAnggaran": 54426000.0,
+   "realisasiAnggaran": [
+    8000000.0,
+    14898000.0,
+    21594000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2209,12 +2459,17 @@
    ],
    "pagu": 269272600.0,
    "realisasi": [
-    25.0,
-    55.0,
-    75.0,
+    12.5,
+    40.0,
+    60.0,
     null
    ],
-   "realisasiAnggaran": 112581000.0,
+   "realisasiAnggaran": [
+    15168000.0,
+    37246000.0,
+    49692000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2232,12 +2487,17 @@
    ],
    "pagu": 129928000.0,
    "realisasi": [
-    20.0,
-    25.0,
-    75.0,
+    null,
+    null,
+    82.5,
     null
    ],
-   "realisasiAnggaran": 75453000.0,
+   "realisasiAnggaran": [
+    null,
+    null,
+    32724000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2255,12 +2515,17 @@
    ],
    "pagu": 18295072000.0,
    "realisasi": [
-    0.38,
-    1.65,
-    2.25,
+    null,
+    1.5,
+    1.8,
     null
    ],
-   "realisasiAnggaran": 10858790000.0,
+   "realisasiAnggaran": [
+    null,
+    2266400000.0,
+    4525332000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2278,12 +2543,17 @@
    ],
    "pagu": 1962900000.0,
    "realisasi": [
-    0.08,
-    0.15,
+    0.07,
+    0.07,
     0.22,
     null
    ],
-   "realisasiAnggaran": 1292100000.0,
+   "realisasiAnggaran": [
+    133975000.0,
+    329302000.0,
+    491009000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2301,12 +2571,17 @@
    ],
    "pagu": 130749000.0,
    "realisasi": [
-    97.5,
-    48.75,
+    87.75,
     78.0,
+    97.5,
     null
    ],
-   "realisasiAnggaran": 99088000.0,
+   "realisasiAnggaran": [
+    28032000.0,
+    24684000.0,
+    26588000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2324,12 +2599,17 @@
    ],
    "pagu": 0,
    "realisasi": [
-    25.0,
+    null,
     50.0,
-    82.5,
+    37.5,
     null
    ],
-   "realisasiAnggaran": 0.0,
+   "realisasiAnggaran": [
+    null,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2347,12 +2627,17 @@
    ],
    "pagu": 18295000.0,
    "realisasi": [
-    22.5,
-    50.0,
-    67.5,
+    25.0,
+    40.0,
+    82.5,
     null
    ],
-   "realisasiAnggaran": 11219000.0,
+   "realisasiAnggaran": [
+    1547000.0,
+    2825000.0,
+    3793000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2370,12 +2655,17 @@
    ],
    "pagu": 950564000.0,
    "realisasi": [
-    2.29,
-    21.05,
-    36.9,
+    4.13,
+    23.16,
+    20.5,
     null
    ],
-   "realisasiAnggaran": 496160000.0,
+   "realisasiAnggaran": [
+    23675000.0,
+    88179000.0,
+    213168000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2398,7 +2688,12 @@
     50.0,
     null
    ],
-   "realisasiAnggaran": 81387000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    27938000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2421,7 +2716,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 34924000.0,
+   "realisasiAnggaran": [
+    44442000.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2440,11 +2740,16 @@
    "pagu": 0,
    "realisasi": [
     25.0,
-    50.0,
-    60.0,
+    55.0,
+    75.0,
     null
    ],
-   "realisasiAnggaran": 0.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2462,12 +2767,17 @@
    ],
    "pagu": 100000000.0,
    "realisasi": [
-    0,
-    20.8,
+    null,
+    23.4,
     0,
     null
    ],
-   "realisasiAnggaran": 60988000.0,
+   "realisasiAnggaran": [
+    null,
+    83484000.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2486,11 +2796,16 @@
    "pagu": 204549900.0,
    "realisasi": [
     0,
-    13.5,
+    27.0,
     0,
     null
    ],
-   "realisasiAnggaran": 151193000.0,
+   "realisasiAnggaran": [
+    0.0,
+    179185000.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2510,10 +2825,15 @@
    "realisasi": [
     0,
     0,
-    1.0,
+    0.9,
     null
    ],
-   "realisasiAnggaran": 171735000.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    2111000.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2531,12 +2851,17 @@
    ],
    "pagu": 0,
    "realisasi": [
-    110.0,
-    0,
+    100.0,
+    null,
     0,
     null
    ],
-   "realisasiAnggaran": 0.0,
+   "realisasiAnggaran": [
+    0.0,
+    null,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2555,11 +2880,16 @@
    "pagu": 0,
    "realisasi": [
     0.5,
-    0.5,
+    0.9,
     0,
     null
    ],
-   "realisasiAnggaran": 0.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2582,7 +2912,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 0.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2605,7 +2940,12 @@
     0,
     null
    ],
-   "realisasiAnggaran": 0.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2625,10 +2965,15 @@
    "realisasi": [
     0,
     0,
-    0.8,
+    0.9,
     null
    ],
-   "realisasiAnggaran": 0.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   },
   {
@@ -2648,10 +2993,15 @@
    "realisasi": [
     0,
     0,
-    0.8,
+    1.0,
     null
    ],
-   "realisasiAnggaran": 0.0,
+   "realisasiAnggaran": [
+    0.0,
+    0.0,
+    0.0,
+    null
+   ],
    "dummy": true
   }
  ],
@@ -2670,7 +3020,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-22"
   },
   {
    "id": "tag002",
@@ -2686,7 +3036,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-24"
   },
   {
    "id": "tag003",
@@ -2702,7 +3052,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-24"
+   "diajukan": "2026-10-22"
   },
   {
    "id": "tag004",
@@ -2718,7 +3068,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-22"
+   "diajukan": "2026-10-20"
   },
   {
    "id": "tag005",
@@ -2750,7 +3100,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-22"
   },
   {
    "id": "tag007",
@@ -2766,7 +3116,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-24"
   },
   {
    "id": "tag008",
@@ -2782,7 +3132,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-24"
   },
   {
    "id": "tag009",
@@ -2798,7 +3148,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-22"
   },
   {
    "id": "tag010",
@@ -2846,7 +3196,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-24"
+   "diajukan": "2026-10-20"
   },
   {
    "id": "tag013",
@@ -2878,7 +3228,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-20"
+   "diajukan": "2026-10-22"
   },
   {
    "id": "tag015",
@@ -2894,7 +3244,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-20"
   },
   {
    "id": "tag016",
@@ -2910,7 +3260,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-24"
+   "diajukan": "2026-10-20"
   },
   {
    "id": "tag017",
@@ -2926,7 +3276,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-24"
   },
   {
    "id": "tag018",
@@ -2958,7 +3308,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-20"
   },
   {
    "id": "tag020",
@@ -2974,7 +3324,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-24"
   },
   {
    "id": "tag021",
@@ -2990,7 +3340,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-20"
+   "diajukan": "2026-10-24"
   },
   {
    "id": "tag022",
@@ -3006,7 +3356,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-24"
+   "diajukan": "2026-10-20"
   },
   {
    "id": "tag023",
@@ -3022,7 +3372,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-24"
   },
   {
    "id": "tag024",
@@ -3054,7 +3404,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-20"
+   "diajukan": "2026-10-22"
   },
   {
    "id": "tag026",
@@ -3070,7 +3420,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-22"
+   "diajukan": "2026-10-24"
   },
   {
    "id": "tag027",
@@ -3086,7 +3436,7 @@
    "catatan": "Kaitan dengan indikator perlu dijelaskan di narasi rencana aksi.",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-24"
   },
   {
    "id": "tag028",
@@ -3102,7 +3452,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-22"
+   "diajukan": "2026-10-20"
   },
   {
    "id": "tag029",
@@ -3118,7 +3468,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-20"
   },
   {
    "id": "tag030",
@@ -3134,7 +3484,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-20"
+   "diajukan": "2026-10-26"
   },
   {
    "id": "tag031",
@@ -3150,7 +3500,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-20"
+   "diajukan": "2026-10-24"
   },
   {
    "id": "tag032",
@@ -3166,7 +3516,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-20"
+   "diajukan": "2026-10-26"
   },
   {
    "id": "tag033",
@@ -3182,7 +3532,7 @@
    "catatan": "",
    "permasalahanId": null,
    "fokus": null,
-   "diajukan": "2026-10-26"
+   "diajukan": "2026-10-20"
   },
   {
    "id": "tag034",

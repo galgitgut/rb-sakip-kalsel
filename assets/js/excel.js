@@ -1,7 +1,7 @@
 // Pembuatan file Excel sesuai template KemenPANRB, dan pembacaan Excel impor.
 // Memakai xlsx-lite.js (di atas JSZip) — tanpa pustaka Excel pihak ketiga.
 import * as db from './data/store.js';
-import { anggaranTag, pdNamaLengkap } from './calc.js';
+import { anggaranTag, realAnggaranTag, pdNamaLengkap } from './calc.js';
 import { writeXlsx, writeXlsxBuffer, downloadBlob, readXlsx, rowsToObjects } from './xlsx-lite.js';
 
 const GENERAL_KOLOM = ['rencana_aksi', 'satuan_output', 'indikator_output', 'target_tw1', 'target_tw2', 'target_tw3', 'target_tw4', 'target_total', 'anggaran_total', 'pelaksana', 'koordinator'];
@@ -57,7 +57,8 @@ export function tematikRows(tema) {
     const pm = db.get('permasalahan', t.permasalahanId) || { portalId: {} };
     const sk = db.get('subkegiatan', t.subkegiatanId) || { target: [0, 0, 0, 0], realisasi: [] };
     const angg = anggaranTag(t, sk);
-    const realAngg = sk.pagu ? (sk.realisasiAnggaran || 0) * (angg / sk.pagu) : null;
+    const adaRealAngg = Array.isArray(sk.realisasiAnggaran) && sk.realisasiAnggaran.some((v) => v !== null && v !== undefined);
+    const realAngg = adaRealAngg ? realAnggaranTag(t, sk) : null;
     const real = sk.realisasi || [];
     return {
       _order: order.indexOf(ind.tema),
@@ -121,15 +122,17 @@ export async function downloadSemuaGeneral(tahun) {
 
 // ---------- impor ----------
 export const IMPOR_KOLOM = ['tahun', 'kode_pd', 'nama_pd', 'kode_sub_kegiatan', 'nama_sub_kegiatan', 'indikator_output', 'satuan',
-  'target_tw1', 'target_tw2', 'target_tw3', 'target_tw4', 'pagu', 'realisasi_tw1', 'realisasi_tw2', 'realisasi_tw3', 'realisasi_tw4', 'realisasi_anggaran'];
+  'target_tw1', 'target_tw2', 'target_tw3', 'target_tw4', 'pagu', 'realisasi_tw1', 'realisasi_tw2', 'realisasi_tw3', 'realisasi_tw4',
+  'realisasi_anggaran_tw1', 'realisasi_anggaran_tw2', 'realisasi_anggaran_tw3', 'realisasi_anggaran_tw4'];
 
 export async function downloadTemplateImpor() {
   const rows = db.all('subkegiatan').map((s) => [
     db.meta().tahun, s.pdId, pdNamaLengkap(s.pdId), s.kode, s.nama, s.indikatorOutput, s.satuan,
     s.target[0], s.target[1], s.target[2], s.target[3], s.pagu,
-    s.realisasi?.[0] ?? null, s.realisasi?.[1] ?? null, s.realisasi?.[2] ?? null, s.realisasi?.[3] ?? null, s.realisasiAnggaran ?? null,
+    s.realisasi?.[0] ?? null, s.realisasi?.[1] ?? null, s.realisasi?.[2] ?? null, s.realisasi?.[3] ?? null,
+    ...[0, 1, 2, 3].map((i) => s.realisasiAnggaran?.[i] ?? null),
   ]);
-  await downloadWorkbook([{ name: 'SUB KEGIATAN', rows: [IMPOR_KOLOM, ...rows], boldRows: 1, cols: [6, 14, 40, 22, 50, 40, 12, 9, 9, 9, 9, 16, 9, 9, 9, 9, 16] }], 'template_impor_sinergi_DUMMY.xlsx');
+  await downloadWorkbook([{ name: 'SUB KEGIATAN', rows: [IMPOR_KOLOM, ...rows], boldRows: 1, cols: [6, 14, 40, 22, 50, 40, 12, 9, 9, 9, 9, 16, 9, 9, 9, 9, 16, 16, 16, 16] }], 'template_impor_sinergi_DUMMY.xlsx');
 }
 
 export async function readImporFile(file) {

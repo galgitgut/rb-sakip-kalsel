@@ -7,6 +7,7 @@ import { indikatorLainUntukSubkeg } from '../calc.js';
 let selInd = null;
 let selSk = null;
 let modeDraft = null; // pilihan mode anggaran yang belum disimpan
+const picked = new Set(); // sub kegiatan yang dicentang untuk diajukan sekaligus
 
 export function render(el, ctx) {
   const pdId = ctx.user.pdId;
@@ -16,10 +17,10 @@ export function render(el, ctx) {
 
   if (!inds.length) {
     el.innerHTML = `${pageHead('PD Pengampu · Langkah 3', 'Tagging Sub Kegiatan', '')}
-      <div class="note info">Akun ini belum diberi hak men-tag indikator RB General.${adaTematik ? ' Silakan isi rencana aksi di menu <a href="#/tematik">RB Tematik</a>.' : ' Hubungi admin Biro Organisasi.'}</div>`;
+      <div class="note info">Akun ini belum diberi hak men-tag indikator RB General.${adaTematik ? ' Silakan isi rencana aksi di menu <a href="#/rb-tematik/isian">RB Tematik</a>.' : ' Hubungi admin Biro Organisasi.'}</div>`;
     return;
   }
-  if (!inds.some((i) => i.id === selInd)) { selInd = inds[0].id; selSk = null; }
+  if (!inds.some((i) => i.id === selInd)) { selInd = inds[0].id; selSk = null; picked.clear(); }
   const ind = db.get('indikator', selInd);
   const akses = aks.find((a) => a.indikatorId === selInd);
   const sks = db.where('subkegiatan', (s) => s.pdId === pdId);
@@ -29,6 +30,9 @@ export function render(el, ctx) {
   const tag = sk ? tagOf(sk.id) : null;
   const mode = modeDraft || tag?.anggaranMode || 'pagu';
   const lain = sk ? indikatorLainUntukSubkeg(sk.id, selInd) : [];
+  const bisaPilih = (s) => { const t = tagOf(s.id); return !t || t.status === 'draf' || t.status === 'dikembalikan'; };
+  const pilihan = sks.filter(bisaPilih);
+  for (const id of [...picked]) if (!pilihan.some((s) => s.id === id)) picked.delete(id);
   const bagianSaya = ind.pembagian.filter((b) => b.pdId === pdId);
 
   el.innerHTML = `
@@ -39,7 +43,7 @@ export function render(el, ctx) {
       return `<button type="button" class="chip" data-ind="${i.id}" aria-pressed="${i.id === selInd}">${esc(i.nama.length > 46 ? i.nama.slice(0, 44) + '…' : i.nama)} · ${n}</button>`;
     }).join('')}
   </div>
-  ${adaTematik ? '<div class="note info small">Akun ini juga mengampu RB Tematik. Rencana aksi Tematik diisi di menu <a href="#/tematik">RB Tematik</a>.</div>' : ''}
+  ${adaTematik ? '<div class="note info small">Akun ini juga mengampu RB Tematik. Rencana aksi Tematik diisi di menu <a href="#/rb-tematik/isian">RB Tematik → Isian</a>.</div>' : ''}
   <section class="inline" style="gap:12px;align-items:stretch" aria-label="Indikator terpilih">
     <div class="card" style="flex:3 1 360px;background:var(--primary);border-color:var(--primary);color:#fff;gap:4px;padding:16px 20px">
       <span class="xs bold" style="color:#CFE3DA">RB GENERAL · ${esc(ind.kelompok.toUpperCase())}</span>
@@ -52,17 +56,23 @@ export function render(el, ctx) {
   </section>
   <div class="row">
     <section class="card flush col-main" aria-label="Sub kegiatan dari Sinergi"><div class="table-wrap"><table class="t" style="min-width:720px">
-      <thead><tr><th>Sub kegiatan & indikator output (Sinergi)</th><th>Target TW1–TW4</th><th>Pagu</th><th>Status</th></tr></thead>
+      <thead><tr><th style="width:44px"><input type="checkbox" id="chk-all" aria-label="Pilih semua sub kegiatan yang belum di-tag" ${pilihan.length && pilihan.every((x) => picked.has(x.id)) ? 'checked' : ''} ${pilihan.length ? '' : 'disabled'} style="width:20px;height:20px"></th><th>Sub kegiatan & indikator output (Sinergi)</th><th>Target TW1–TW4</th><th>Pagu</th><th>Status</th></tr></thead>
       <tbody>${sks.map((s) => {
         const t = tagOf(s.id);
         const other = indikatorLainUntukSubkeg(s.id, selInd);
         return `<tr class="clickable ${s.id === selSk ? 'sel' : ''}" data-sk="${s.id}" tabindex="0">
+          <td>${bisaPilih(s) ? `<input type="checkbox" data-pick="${s.id}" ${picked.has(s.id) ? 'checked' : ''} aria-label="Pilih ${esc(s.nama)}" style="width:20px;height:20px">` : ''}</td>
           <td><div class="xs muted num">${esc(s.kode)}</div><b>${esc(s.nama)}</b><div class="small" style="color:#3F4A45">${esc(s.indikatorOutput)} (${esc(s.satuan)})</div>
             ${other.length ? `<div class="xs bold" style="color:var(--blue-text)">Juga di-tag ke: ${other.map((o) => esc(o.nama)).join(', ')}</div>` : ''}</td>
           <td class="num small">${s.target.map((x) => fmtNum(x)).join(' · ')}</td>
           <td class="num small">${fmtRp(s.pagu)}</td>
           <td>${badge(t ? t.status : 'none')}</td></tr>`;
-      }).join('')}</tbody></table></div></section>
+      }).join('')}</tbody></table></div>
+      ${picked.size ? `<div class="bulkbar" role="region" aria-label="Aksi untuk sub kegiatan terpilih">
+        <span><b>${picked.size} sub kegiatan dipilih</b> · anggaran memakai pagu penuh (ubah per baris lewat panel kanan bila perlu)</span>
+        <span class="inline"><button type="button" class="btn secondary small" id="bulk-draf">Simpan draf</button><button type="button" class="btn small" id="bulk-ajukan" style="background:#fff;color:var(--primary-dark)">Tag & ajukan verifikasi (${picked.size})</button><button type="button" class="btn small" id="bulk-batal" style="background:transparent;border-color:#5E8A7C">Batal pilih</button></span>
+      </div>` : ''}
+    </section>
     ${sk ? `<aside class="card focus col-side" aria-label="Panel tag">
       <div class="stack" style="gap:4px"><span class="xs bold" style="color:var(--primary)">TAG KE: ${esc(ind.nama.toUpperCase())}</span>
         <h2 style="font-size:17px;line-height:24px">${esc(sk.nama)}</h2><span class="small muted">${esc(sk.indikatorOutput)} (${esc(sk.satuan)})</span></div>
@@ -94,9 +104,24 @@ export function render(el, ctx) {
   el.querySelectorAll('[data-ind]').forEach((b) => b.addEventListener('click', () => { selInd = b.dataset.ind; modeDraft = null; ctx.rerender(); }));
   el.querySelectorAll('[data-sk]').forEach((r) => {
     const go = () => { selSk = r.dataset.sk; modeDraft = null; ctx.rerender(); };
-    r.addEventListener('click', go);
+    r.addEventListener('click', (e) => { if (e.target.closest('input')) return; go(); });
     r.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
   });
+  el.querySelectorAll('[data-pick]').forEach((c) => c.addEventListener('change', () => { c.checked ? picked.add(c.dataset.pick) : picked.delete(c.dataset.pick); ctx.rerender(); }));
+  el.querySelector('#chk-all')?.addEventListener('change', (e) => { pilihan.forEach((x) => (e.target.checked ? picked.add(x.id) : picked.delete(x.id))); ctx.rerender(); });
+  el.querySelector('#bulk-batal')?.addEventListener('click', () => { picked.clear(); ctx.rerender(); });
+  const bulk = async (status) => {
+    const docs = [...picked].map((skId) => {
+      const lama = tagOf(skId);
+      return { ...(lama || { jenis: 'general', indikatorId: selInd, pdId, subkegiatanId: skId, permasalahanId: null, fokus: null, narasi: '', anggaranMode: 'pagu', anggaranManual: null }),
+        bagian: lama?.bagian || bagianSaya[0]?.bagian || '', status, catatan: status === 'diajukan' ? '' : (lama?.catatan || ''), diajukan: today() };
+    });
+    await db.saveMany('tag', docs);
+    toast(status === 'diajukan' ? `${docs.length} sub kegiatan diajukan untuk verifikasi` : `${docs.length} draf disimpan`);
+    picked.clear(); ctx.rerender();
+  };
+  el.querySelector('#bulk-ajukan')?.addEventListener('click', () => bulk('diajukan'));
+  el.querySelector('#bulk-draf')?.addEventListener('click', () => bulk('draf'));
   el.querySelector('#btn-target')?.addEventListener('click', () => editIndikatorDialog(ind, { onSaved: ctx.rerender }));
   el.querySelectorAll('[data-mode]').forEach((b) => b.addEventListener('click', () => { modeDraft = b.dataset.mode; ctx.rerender(); }));
   el.querySelector('#btn-lepas')?.addEventListener('click', async () => {

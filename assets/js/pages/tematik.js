@@ -49,7 +49,7 @@ export function render(el, ctx) {
   const pdId = ctx.user.pdId;
   const inds = db.where('akses', (a) => a.pdId === pdId && a.isiTematik).map((a) => db.get('indikator', a.indikatorId)).filter((i) => i && i.jenis === 'tematik');
   if (!inds.length) {
-    el.innerHTML = `${pageHead('PD Pengampu · Langkah 4', 'RB Tematik', '')}<div class="note info">Akun ini tidak mengampu tema RB Tematik. Rencana aksi RB General diisi di menu <a href="#/tagging">Tagging Sub Kegiatan</a>.</div>`;
+    el.innerHTML = `${pageHead('PD Pengampu · Langkah 4', 'RB Tematik', '')}<div class="note info">Akun ini tidak mengampu tema RB Tematik. Rencana aksi RB General diisi di menu <a href="#/rb-general/tagging">RB General → Tagging Sub Kegiatan</a>.</div>`;
     return;
   }
   if (!inds.some((i) => i.id === selInd)) { selInd = inds[0].id; selPm = null; }

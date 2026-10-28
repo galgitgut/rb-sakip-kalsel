@@ -14,13 +14,13 @@ function validasi(rows) {
     const baris = i + 2;
     const kode = r.kode_sub_kegiatan ? String(r.kode_sub_kegiatan).trim() : '';
     if (!kode) { masalah.push({ baris, pd: r.nama_pd || r.kode_pd || '—', pesan: 'Kode sub kegiatan kosong — baris dilewati' }); return; }
-    const nums = ['target_tw1', 'target_tw2', 'target_tw3', 'target_tw4', 'pagu', 'realisasi_tw1', 'realisasi_tw2', 'realisasi_tw3', 'realisasi_tw4', 'realisasi_anggaran'];
+    const nums = ['target_tw1', 'target_tw2', 'target_tw3', 'target_tw4', 'pagu', 'realisasi_tw1', 'realisasi_tw2', 'realisasi_tw3', 'realisasi_tw4', 'realisasi_anggaran_tw1', 'realisasi_anggaran_tw2', 'realisasi_anggaran_tw3', 'realisasi_anggaran_tw4'];
     const bad = nums.filter((k) => r[k] !== null && r[k] !== '' && parseNum(r[k]) === null);
     if (bad.length) { masalah.push({ baris, pd: r.nama_pd || r.kode_pd, pesan: `Bukan angka: ${bad.join(', ')} — baris dilewati` }); return; }
     const doc = {
       kode, nama: r.nama_sub_kegiatan, indikatorOutput: r.indikator_output, satuan: r.satuan,
       target: [1, 2, 3, 4].map((n) => parseNum(r[`target_tw${n}`]) || 0), pagu: parseNum(r.pagu) || 0,
-      realisasi: [1, 2, 3, 4].map((n) => parseNum(r[`realisasi_tw${n}`])), realisasiAnggaran: parseNum(r.realisasi_anggaran),
+      realisasi: [1, 2, 3, 4].map((n) => parseNum(r[`realisasi_tw${n}`])), realisasiAnggaran: [1, 2, 3, 4].map((n) => parseNum(r[`realisasi_anggaran_tw${n}`])),
     };
     const lama = byKode.get(kode);
     if (lama) upd.push({ ...lama, ...doc });

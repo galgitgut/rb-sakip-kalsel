@@ -1,38 +1,60 @@
-// Kerangka aplikasi internal: login, menu samping, dan perpindahan halaman (#/nama-halaman).
+// Kerangka aplikasi internal: login, menu atas, sub-tab, dan perpindahan halaman (#/bagian/sub).
 import * as db from './data/store.js';
 import { currentUser, login, logout } from './auth.js';
-import { esc, icon, toast } from './util.js';
+import { esc, toast } from './util.js';
 import { APP } from './config.js';
 
-import * as indikator from './pages/indikator.js';
-import * as akses from './pages/akses.js';
+import * as rencanaGeneral from './pages/rencana-general.js';
+import * as rencanaTematik from './pages/rencana-tematik.js';
+import * as realisasi from './pages/realisasi.js';
 import * as tagging from './pages/tagging.js';
 import * as tematik from './pages/tematik.js';
+import * as indikator from './pages/indikator.js';
+import * as akses from './pages/akses.js';
 import * as verifikasi from './pages/verifikasi.js';
 import * as ekspor from './pages/ekspor.js';
 import * as infografis from './pages/infografis.js';
 import * as impor from './pages/impor.js';
 
-const ROUTES = {
-  indikator: { mod: indikator, label: 'Master Indikator', icon: 'target', role: 'admin' },
-  akses: { mod: akses, label: 'Hak Akses & Pembagian', icon: 'users', role: 'admin' },
-  verifikasi: { mod: verifikasi, label: 'Verifikasi Tag', icon: 'check', role: 'admin' },
-  ekspor: { mod: ekspor, label: 'Ekspor KemenPANRB', icon: 'download', role: 'admin' },
-  infografis: { mod: infografis, label: 'Kelola Infografis', icon: 'image', role: 'admin' },
-  impor: { mod: impor, label: 'Impor Sinergi', icon: 'upload', role: 'admin' },
-  tagging: { mod: tagging, label: 'Tagging Sub Kegiatan', icon: 'tag', role: 'pd' },
-  tematik: { mod: tematik, label: 'RB Tematik', icon: 'layers', role: 'pd' },
+const ALL = ['admin', 'pd'];
+const SECTIONS = {
+  'rb-general': {
+    label: 'RB General', roles: ALL, tabs: [
+      { key: 'tabel', label: 'Tabel Rencana Aksi', mod: rencanaGeneral, roles: ALL },
+      { key: 'tagging', label: 'Tagging Sub Kegiatan', mod: tagging, roles: ['pd'] },
+    ],
+  },
+  'rb-tematik': {
+    label: 'RB Tematik', roles: ALL, tabs: [
+      { key: 'tabel', label: 'Tabel Rencana Aksi', mod: rencanaTematik, roles: ALL },
+      { key: 'isian', label: 'Isian RB Tematik', mod: tematik, roles: ['pd'] },
+    ],
+  },
+  realisasi: {
+    label: 'Realisasi RB', roles: ALL, tabs: [
+      { key: 'general', label: 'RB General', mod: realisasi, roles: ALL },
+      { key: 'tematik', label: 'RB Tematik', mod: realisasi, roles: ALL },
+    ],
+  },
+  admin: {
+    label: 'Admin', roles: ['admin'], tabs: [
+      { key: 'verifikasi', label: 'Verifikasi Tag', mod: verifikasi, roles: ['admin'], count: () => db.where('tag', (t) => t.status === 'diajukan').length },
+      { key: 'indikator', label: 'Master Indikator', mod: indikator, roles: ['admin'] },
+      { key: 'akses', label: 'Hak Akses & Pembagian', mod: akses, roles: ['admin'] },
+      { key: 'ekspor', label: 'Ekspor KemenPANRB', mod: ekspor, roles: ['admin'] },
+      { key: 'infografis', label: 'Infografis Beranda', mod: infografis, roles: ['admin'] },
+      { key: 'impor', label: 'Impor Sinergi & Data', mod: impor, roles: ['admin'] },
+    ],
+  },
 };
 
 const app = document.getElementById('app');
 
-function routeName() {
-  return (location.hash.replace(/^#\/?/, '').split('?')[0]) || '';
+function parseHash() {
+  const [sec = '', sub = ''] = location.hash.replace(/^#\/?/, '').split('?')[0].split('/');
+  return { sec, sub };
 }
-
-function defaultRoute(user) {
-  return user.role === 'admin' ? 'verifikasi' : 'tagging';
-}
+const defaultPath = (user) => (user.role === 'admin' ? 'admin/verifikasi' : 'rb-general/tagging');
 
 function renderLogin() {
   const pds = db.all('pd');
@@ -44,9 +66,7 @@ function renderLogin() {
         <label class="field">Akun
           <select name="akun" required>
             <option value="admin">Admin · Biro Organisasi (verifikator)</option>
-            <optgroup label="PD Pengampu">
-              ${pds.map((p) => `<option value="pd:${p.id}">${esc(p.nama)}</option>`).join('')}
-            </optgroup>
+            <optgroup label="PD Pengampu">${pds.map((p) => `<option value="pd:${p.id}">${esc(p.nama)}</option>`).join('')}</optgroup>
           </select>
         </label>
         <button class="btn" type="submit">Masuk</button>
@@ -59,49 +79,56 @@ function renderLogin() {
     if (v === 'admin') login({ role: 'admin', pdId: null, nama: 'Admin · Biro Organisasi' });
     else {
       const pd = db.get('pd', v.slice(3));
-      login({ role: 'pd', pdId: pd.id, nama: `PD Pengampu · ${pd.singkatan}` });
+      login({ role: 'pd', pdId: pd.id, nama: pd.nama, singkatan: pd.singkatan });
     }
-    history.replaceState(null, '', '#/' + defaultRoute(currentUser()));
+    history.replaceState(null, '', '#/' + defaultPath(currentUser()));
     renderApp();
   });
-}
-
-function sidebar(user, active) {
-  const link = (key) => {
-    const r = ROUTES[key];
-    return `<a href="#/${key}" ${key === active ? 'aria-current="page"' : ''}>${icon(r.icon)}${esc(r.label)}</a>`;
-  };
-  const keys = Object.keys(ROUTES).filter((k) => ROUTES[k].role === user.role);
-  return `<nav class="side" aria-label="Menu utama">
-    <div class="brand"><small>Pemprov Kalimantan Selatan</small><b>${esc(APP.nama)}</b></div>
-    <div class="group"><a href="index.html">${icon('home')}Beranda Publik</a></div>
-    <div class="group"><span class="group-label">${user.role === 'admin' ? 'Admin · Biro Organisasi' : 'PD Pengampu'}</span>${keys.map(link).join('')}</div>
-    <div class="who"><small>Masuk sebagai</small><b class="small">${esc(user.nama)}</b><button type="button" id="btn-logout">Keluar</button></div>
-  </nav>`;
 }
 
 async function renderApp() {
   const user = currentUser();
   if (!user) { renderLogin(); return; }
-  let name = routeName();
-  if (!ROUTES[name] || ROUTES[name].role !== user.role) {
-    name = defaultRoute(user);
-    history.replaceState(null, '', '#/' + name);
+  let { sec, sub } = parseHash();
+  let section = SECTIONS[sec];
+  if (!section || !section.roles.includes(user.role)) {
+    [sec, sub] = defaultPath(user).split('/');
+    section = SECTIONS[sec];
   }
-  const route = ROUTES[name];
-  app.innerHTML = `<div class="shell">${sidebar(user, name)}<main class="main" id="page"></main></div>`;
+  const tabs = section.tabs.filter((t) => t.roles.includes(user.role));
+  const tab = tabs.find((t) => t.key === sub) || tabs[0];
+  history.replaceState(null, '', `#/${sec}/${tab.key}`);
+
+  const navItems = Object.entries(SECTIONS).filter(([, s]) => s.roles.includes(user.role));
+  app.innerHTML = `
+  <header class="topbar"><div class="in">
+    <a class="logo" href="index.html"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><b>${esc(APP.nama)}</b></a>
+    <nav class="topnav" aria-label="Menu utama">
+      <a href="index.html">Beranda</a>
+      ${navItems.map(([k, s]) => `<a href="#/${k}" ${k === sec ? 'aria-current="page"' : ''}>${esc(s.label)}</a>`).join('')}
+    </nav>
+    <div class="userbox"><span><span class="muted">Masuk sebagai</span><b>${esc(user.role === 'admin' ? user.nama : `PD · ${user.singkatan || user.nama}`)}</b></span>
+      <button type="button" class="btn secondary small" id="btn-logout">Keluar</button></div>
+  </div></header>
+  <div class="page-wide">
+    ${tabs.length > 1 ? `<nav class="subtabs" aria-label="${esc(section.label)}">${tabs.map((t) => {
+      const n = t.count ? t.count() : 0;
+      return `<a href="#/${sec}/${t.key}" ${t === tab ? 'aria-current="page"' : ''}>${esc(t.label)}${n ? `<span class="count">${n}</span>` : ''}</a>`;
+    }).join('')}</nav>` : ''}
+    <main id="page" class="stack" style="gap:20px"></main>
+  </div>`;
   app.querySelector('#btn-logout').addEventListener('click', () => { logout(); history.replaceState(null, '', location.pathname); renderApp(); });
+  document.title = `${tab.label} · ${section.label} · ${APP.nama}`;
   const el = app.querySelector('#page');
-  document.title = `${route.label} · ${APP.nama}`;
+  const ctx = { user, sec, sub: tab.key };
+  // Bagian yang menampilkan hitungan di sub-tab digambar ulang seluruhnya agar angkanya ikut berubah.
+  ctx.rerender = section.tabs.some((t) => t.count) ? () => renderApp() : () => tab.mod.render(el, ctx);
   try {
-    const ctx = { user };
-    ctx.rerender = () => route.mod.render(el, ctx);
-    await route.mod.render(el, ctx);
+    await tab.mod.render(el, ctx);
   } catch (e) {
     console.error(e);
     el.innerHTML = `<div class="note warn">Terjadi kesalahan: ${esc(e.message)}</div>`;
   }
-  el.focus?.();
 }
 
 window.addEventListener('hashchange', renderApp);

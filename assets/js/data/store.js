@@ -6,7 +6,7 @@
 // Bentuk tiap koleksi dijelaskan di docs/MODEL-DATA.md
 import { DATA_MODE } from '../config.js';
 
-const KEY = 'rbsakip:v1';
+const KEY = 'rbsakip:v2'; // naikkan versi bila bentuk data berubah
 const COLLECTIONS = ['pd', 'indikator', 'akses', 'subkegiatan', 'tag', 'permasalahan', 'infografis', 'imporLog', 'eksporStatus'];
 let cache = null;
 

@@ -162,13 +162,27 @@ def num(v):
 
 
 def realisasi_dummy(target):
+    """Realisasi output per TW. None = belum dilaporkan. TW IV belum berjalan."""
     out = []
     for i, t in enumerate(target):
-        if i == 3:
-            out.append(None)  # TW IV belum berjalan
+        if i == 3 or random.random() < 0.12:
+            out.append(None)
         else:
             ratio = random.choice([1, 1, 1, 0.9, 0.8, 1.1, 0.5])
             out.append(round(t * ratio, 2) if t else 0)
+    return out
+
+
+def realisasi_anggaran_dummy(target, pagu, realisasi):
+    """Realisasi anggaran per TW (bukan kumulatif). None bila output TW itu belum dilaporkan."""
+    tot = sum(target)
+    out = []
+    for i in range(4):
+        if realisasi[i] is None:
+            out.append(None)
+        else:
+            share = (target[i] / tot) if tot else 0.25
+            out.append(round(pagu * share * random.uniform(0.55, 1.0), -3))
     return out
 
 
@@ -261,7 +275,7 @@ def main(path_general, path_tematik):
             subkeg.append({
                 "id": f"{pid}-{j}", "kode": f"9.{seq:02d}.01.2.01.{j + 1:04d}", "pdId": pid, "nama": nama,
                 "indikatorOutput": out, "satuan": sat, "target": tgt, "pagu": pagu,
-                "realisasi": real, "realisasiAnggaran": round(pagu * random.uniform(0.45, 0.75), -5), "dummy": True,
+                "realisasi": real, "realisasiAnggaran": realisasi_anggaran_dummy(tgt, pagu, real), "dummy": True,
             })
         seq += 1
 
@@ -298,13 +312,15 @@ def main(path_general, path_tematik):
                 "portalId": {"permasalahan_id": row["permasalahan_id"], "indikator_permasalahan_id": row["indikator_permasalahan_id"]},
             })
         tgt = [num(row[f"target_tw{i}"]) or 0 for i in range(1, 5)]
+        real = realisasi_dummy(tgt)
+        pagu_t = num(row["anggaran"]) or 0
         sid = f"tm-{k:03d}"
         subkeg.append({
             "id": sid, "kode": f"9.90.01.2.01.{k + 1:04d}", "pdId": pid,
             "nama": "[Dummy] Sub kegiatan pendukung: " + (row["rencana_aksi"] or "")[:70].split("\n")[0],
             "indikatorOutput": row["indikator_output"], "satuan": row["satuan_output"], "target": tgt,
-            "pagu": num(row["anggaran"]) or 0, "realisasi": realisasi_dummy(tgt),
-            "realisasiAnggaran": round((num(row["anggaran"]) or 0) * random.uniform(0.4, 0.8), -3), "dummy": True,
+            "pagu": pagu_t, "realisasi": real,
+            "realisasiAnggaran": realisasi_anggaran_dummy(tgt, pagu_t, real), "dummy": True,
         })
         tags.append({
             "id": f"tag{tid:03d}", "jenis": "tematik", "indikatorId": ind_id, "pdId": pid, "subkegiatanId": sid,

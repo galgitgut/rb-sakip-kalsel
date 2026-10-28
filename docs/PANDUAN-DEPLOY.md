@@ -56,11 +56,11 @@ Dipakai bila repositori harus privat, atau saat masuk tahap 2.
 ## E. Cara mencoba prototipe
 
 1. Buka Beranda → **Masuk (Admin / PD)**.
-2. Pilih **PD Pengampu · Dinas Komunikasi dan Informatika** → menu **Tagging Sub Kegiatan** → klik satu sub kegiatan → pilih anggaran → **Ajukan verifikasi**.
-3. **Keluar** → masuk sebagai **Admin** → **Verifikasi Tag** → setujui.
-4. Buka **Beranda Publik**: angka rencana aksi dan anggaran ikut berubah.
-5. **Ekspor KemenPANRB** → unduh file per indikator lalu buka di Excel.
-6. Untuk mencoba RB Tematik, masuk sebagai **Bappeda**.
+2. Pilih **PD Pengampu · Dinas Komunikasi dan Informatika** → **RB General → Tagging Sub Kegiatan** → centang beberapa sub kegiatan → **Tag & ajukan verifikasi**.
+3. **Keluar** → masuk sebagai **Admin** → **Admin → Verifikasi Tag** → centang semua → setujui.
+4. Lihat hasilnya di **RB General → Tabel Rencana Aksi**, **Realisasi RB**, dan **Beranda**.
+5. **Admin → Ekspor KemenPANRB** → unduh file per indikator lalu buka di Excel.
+6. Untuk mencoba RB Tematik, masuk sebagai **Bappeda** → **RB Tematik → Isian RB Tematik**.
 
 ## Hal penting di tahap 1
 

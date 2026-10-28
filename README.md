@@ -10,15 +10,13 @@ Prototipe aplikasi Reformasi Birokrasi (RB) Pemerintah Provinsi Kalimantan Selat
 
 | Halaman | Akses | Fungsi |
 |---|---|---|
-| `index.html` — Beranda publik | Semua orang | Infografis capaian, anggaran per triwulan, RB General, 6 tema RB Tematik, fokus intervensi, PD pengampu, galeri infografis |
-| `app.html#/indikator` | Admin | Master indikator; target/baseline/satuan diisi manual |
-| `app.html#/akses` | Admin | Hak akses akun PD per indikator; pembagian Nilai SAKIP & IKU Makro |
-| `app.html#/verifikasi` | Admin | Setujui / kembalikan tag dari PD |
-| `app.html#/ekspor` | Admin | Ekspor template KemenPANRB: per indikator, per tema, semua General (ZIP), semua Tematik |
-| `app.html#/infografis` | Admin | Unggah & atur infografis Beranda |
-| `app.html#/impor` | Admin | Impor Excel sub kegiatan Sinergi; reset data prototipe |
-| `app.html#/tagging` | PD pengampu | Tag sub kegiatan ke indikator RB General; anggaran pagu penuh atau manual |
-| `app.html#/tematik` | PD pengampu | Permasalahan → indikator permasalahan → rencana aksi + fokus intervensi |
+| `index.html` — Beranda publik | Semua orang | Filter "data realisasi sampai triwulan", tab Ringkasan / Per Koordinator / Per Indikator / Perlu Perhatian, unduh PDF, tren per triwulan, per sub komponen & per tema, infografis & galeri |
+| `app.html#/rb-general/tabel` | Admin & PD | Tabel Rencana Aksi General: semua indikator + target, baseline, rencana aksi (filter, unduh .xlsx) |
+| `app.html#/rb-general/tagging` | PD pengampu | Tag sub kegiatan (bisa pilih banyak sekaligus); anggaran pagu penuh atau manual |
+| `app.html#/rb-tematik/tabel` | Admin & PD | Tabel Rencana Aksi Tematik: tema → indikator roadmap → permasalahan → rencana aksi |
+| `app.html#/rb-tematik/isian` | PD pengampu | Isian permasalahan, indikator permasalahan, rencana aksi + fokus intervensi |
+| `app.html#/realisasi/general` · `/tematik` | Admin & PD | Rencana aksi + realisasi output & anggaran per triwulan (hanya baca, unduh .xlsx) |
+| `app.html#/admin/…` | Admin | Satu halaman dengan tab: Verifikasi, Master Indikator, Hak Akses & Pembagian, Ekspor KemenPANRB, Infografis Beranda, Impor Sinergi & Data |
 
 ## Sumber data awal
 
@@ -36,7 +34,8 @@ assets/css/style.css        tampilan
 assets/js/config.js         pengaturan (mode data, tahun, triwulan berjalan)
 assets/js/data/store.js     SATU-SATUNYA pintu akses data (ganti adapter di sini)
 assets/js/auth.js           login (simulasi)
-assets/js/calc.js           rumus capaian & anggaran
+assets/js/calc.js           rumus capaian, kelengkapan pelaporan, serapan
+assets/js/ringkasan.js      isi Beranda (ringkasan, per koordinator, per indikator, perlu perhatian)
 assets/js/excel.js          ekspor template KemenPANRB & impor
 assets/js/xlsx-lite.js      penulis/pembaca .xlsx ringan (di atas JSZip)
 assets/js/pages/*.js        halaman aplikasi
