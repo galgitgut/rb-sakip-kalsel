@@ -1,0 +1,4668 @@
+{
+ "meta": {
+  "tahun": 2026,
+  "dibuat": "seed prototipe",
+  "periodeData": "s.d. Triwulan III"
+ },
+ "pd": [
+  {
+   "id": "biro-org",
+   "singkatan": "Biro Organisasi",
+   "nama": "Biro Organisasi Sekretariat Daerah Provinsi Kalimantan Selatan"
+  },
+  {
+   "id": "inspektorat",
+   "singkatan": "Inspektorat",
+   "nama": "Inspektorat Provinsi Kalimantan Selatan"
+  },
+  {
+   "id": "bappeda",
+   "singkatan": "Bappeda",
+   "nama": "Badan Perencanaan Pembangunan Daerah Provinsi Kalimantan Selatan"
+  },
+  {
+   "id": "diskominfo",
+   "singkatan": "Diskominfo",
+   "nama": "Dinas Komunikasi dan Informatika Provinsi Kalimantan Selatan"
+  },
+  {
+   "id": "dispersip",
+   "singkatan": "Dispersip",
+   "nama": "Dinas Perpustakaan dan Kearsipan Provinsi Kalimantan Selatan"
+  },
+  {
+   "id": "biro-hukum",
+   "singkatan": "Biro Hukum",
+   "nama": "Biro Hukum Sekretariat Daerah Provinsi Kalimantan Selatan"
+  },
+  {
+   "id": "biro-pbj",
+   "singkatan": "Biro PBJ",
+   "nama": "Biro Pengadaan Barang dan Jasa Sekretariat Daerah Provinsi Kalimantan Selatan"
+  },
+  {
+   "id": "bkd",
+   "singkatan": "BKD",
+   "nama": "Badan Kepegawaian Daerah Provinsi Kalimantan Selatan"
+  },
+  {
+   "id": "dpmptsp",
+   "singkatan": "DPMPTSP",
+   "nama": "Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu"
+  },
+  {
+   "id": "disperin",
+   "singkatan": "Dinas Perindustrian",
+   "nama": "Dinas Perindustrian"
+  },
+  {
+   "id": "dinkes",
+   "singkatan": "Dinas Kesehatan",
+   "nama": "Dinas Kesehatan"
+  },
+  {
+   "id": "distanpangan",
+   "singkatan": "Distan & KP",
+   "nama": "Dinas Pertanian dan Ketahanan Pangan"
+  },
+  {
+   "id": "disdikbud",
+   "singkatan": "Disdikbud",
+   "nama": "Dinas Pendidikan dan Kebudayaan"
+  }
+ ],
+ "masterFokus": [
+  "Perencanaan dan Penganggaran",
+  "Proses Bisnis dan SOP",
+  "Sumber Daya Manusia",
+  "Pengawasan",
+  "Teknologi dan Informasi",
+  "Inovasi",
+  "Lain-lain"
+ ],
+ "masterTema": [
+  "Pengentasan Kemiskinan",
+  "Peningkatan Investasi",
+  "Mendorong Hilirisasi",
+  "Mendorong Peningkatan Kualitas dan Akses Layanan Kesehatan",
+  "Mendukung Ketahanan Pangan Nasional",
+  "Mendorong Peningkatan Akses, Kualitas, dan Mutu Pendidikan"
+ ],
+ "templateMeta": {
+  "version": "rb-tematik-v2",
+  "tahun": 2026,
+  "instansi_id": 564,
+  "instansi": "Pemerintah Daerah Provinsi Kalimantan Selatan",
+  "dibuat_pada": "2026-10-28T08:41:21+07:00"
+ },
+ "templatePetunjuk": [
+  "Petunjuk Impor RB Tematik 2026",
+  null,
+  "1. Ubah data hanya pada sheet DATA RB TEMATIK.",
+  "2. Pilih Tema dan Fokus Intervensi dari daftar yang tersedia.",
+  "3. Jangan mengubah header, sheet metadata, atau kolom ID tersembunyi.",
+  "4. ID yang terisi memperbarui data yang sama; ID kosong membuat data baru.",
+  "5. Menghapus baris dari Excel tidak menghapus data di sistem.",
+  "6. Capaian dihitung ulang oleh sistem saat impor disetujui.",
+  null,
+  "Maksimal 1.000 baris dan ukuran file 2 MB. Template hanya berlaku untuk tahun dan instansi ini."
+ ],
+ "templateTematikKolom": [
+  "tema",
+  "sasaran",
+  "indikator_roadmap",
+  "target",
+  "satuan_target",
+  "realisasi",
+  "capaian",
+  "catatan",
+  "permasalahan",
+  "sasaran_permasalahan",
+  "indikator_permasalahan",
+  "target_indikator_permasalahan",
+  "satuan_target_indikator_permasalahan",
+  "realisasi_indikator_permasalahan",
+  "capaian_indikator_permasalahan",
+  "catatan_indikator_permasalahan",
+  "rencana_aksi",
+  "indikator_output",
+  "satuan_output",
+  "target_tw1",
+  "target_tw2",
+  "target_tw3",
+  "target_tw4",
+  "target_total",
+  "anggaran",
+  "fokus_intervensi",
+  "koordinator",
+  "pelaksana",
+  "realisasi_tw1",
+  "realisasi_tw2",
+  "realisasi_tw3",
+  "realisasi_tw4",
+  "realisasi_total",
+  "realisasi_anggaran",
+  "catatan_monev",
+  "sasaran_roadmap_id",
+  "indikator_roadmap_id",
+  "permasalahan_id",
+  "indikator_permasalahan_id",
+  "rencana_aksi_id",
+  "rencana_aksi_output_id"
+ ],
+ "indikator": [
+  {
+   "id": "G01",
+   "jenis": "general",
+   "no": 1,
+   "komponen": "RB General",
+   "kelompok": "Strategi Pelaksanaan RB General",
+   "nama": "Rencana Aksi Pembangunan RB General",
+   "satuan": "",
+   "target": 2.5,
+   "baseline": 2.5,
+   "pengampu": [
+    "biro-org"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G02",
+   "jenis": "general",
+   "no": 2,
+   "komponen": "RB General",
+   "kelompok": "Strategi Pelaksanaan RB General",
+   "nama": "Tingkat Implementasi Rencana Aksi RB General",
+   "satuan": "",
+   "target": 70.0,
+   "baseline": 68.0,
+   "pengampu": [
+    "biro-org"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G03",
+   "jenis": "general",
+   "no": 3,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Tingkat Capaian Sistem Kerja untuk Penyederhanaan Birokrasi",
+   "satuan": "",
+   "target": 3.0,
+   "baseline": 3.0,
+   "pengampu": [
+    "biro-org"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G04",
+   "jenis": "general",
+   "no": 4,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Tingkat Maturitas SPIP",
+   "satuan": "",
+   "target": 3.0,
+   "baseline": 3.09,
+   "pengampu": [
+    "inspektorat"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G05",
+   "jenis": "general",
+   "no": 5,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Tingkat Keberhasilan Pembangunan ZI",
+   "satuan": "",
+   "target": null,
+   "baseline": 0.5,
+   "pengampu": [
+    "inspektorat"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G06",
+   "jenis": "general",
+   "no": 6,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Nilai SAKIP",
+   "satuan": "",
+   "target": 84.0,
+   "baseline": 82.04,
+   "pengampu": [
+    "inspektorat",
+    "bappeda",
+    "biro-org"
+   ],
+   "pembagian": [
+    {
+     "bagian": "Perencanaan Kinerja",
+     "bobot": 30,
+     "pdId": "bappeda"
+    },
+    {
+     "bagian": "Pengukuran Kinerja",
+     "bobot": 30,
+     "pdId": "biro-org"
+    },
+    {
+     "bagian": "Pelaporan Kinerja",
+     "bobot": 15,
+     "pdId": "biro-org"
+    },
+    {
+     "bagian": "Evaluasi Akuntabilitas Kinerja Internal",
+     "bobot": 25,
+     "pdId": "inspektorat"
+    }
+   ]
+  },
+  {
+   "id": "G07",
+   "jenis": "general",
+   "no": 7,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Indeks Perencanaan Pembangunan",
+   "satuan": "",
+   "target": 88.2,
+   "baseline": 94.53,
+   "pengampu": [
+    "bappeda"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G08",
+   "jenis": "general",
+   "no": 8,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Tingkat Implementasi Kebijakan Arsitektur SPBE",
+   "satuan": "",
+   "target": null,
+   "baseline": 3.0,
+   "pengampu": [
+    "diskominfo"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G09",
+   "jenis": "general",
+   "no": 9,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Tingkat Digitalisasi Arsip",
+   "satuan": "",
+   "target": 100.0,
+   "baseline": 90.54,
+   "pengampu": [
+    "dispersip"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G10",
+   "jenis": "general",
+   "no": 10,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Tingkat tindak lanjut pengaduan masyarakat (LAPOR) yang sudah diselesaikan",
+   "satuan": "",
+   "target": 0.98,
+   "baseline": 4.0,
+   "pengampu": [
+    "diskominfo"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G11",
+   "jenis": "general",
+   "no": 11,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Indeks Kualitas Kebijakan",
+   "satuan": "",
+   "target": 50.0,
+   "baseline": 43.35,
+   "pengampu": [
+    "biro-hukum"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G12",
+   "jenis": "general",
+   "no": 12,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Indeks Reformasi Hukum",
+   "satuan": "",
+   "target": 95.0,
+   "baseline": 97.94,
+   "pengampu": [
+    "biro-hukum"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G13",
+   "jenis": "general",
+   "no": 13,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Indeks Pembangunan Statistik",
+   "satuan": "",
+   "target": 2.6,
+   "baseline": 2.25,
+   "pengampu": [
+    "diskominfo"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G14",
+   "jenis": "general",
+   "no": 14,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Indeks Tata Kelola Pengadaan",
+   "satuan": "",
+   "target": 85.0,
+   "baseline": 93.75,
+   "pengampu": [
+    "biro-pbj"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G15",
+   "jenis": "general",
+   "no": 15,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Indeks Sistem Merit",
+   "satuan": "",
+   "target": 330.0,
+   "baseline": 279.0,
+   "pengampu": [
+    "bkd"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G16",
+   "jenis": "general",
+   "no": 16,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Indeks Pelayanan Publik",
+   "satuan": "",
+   "target": 4.6,
+   "baseline": 4.56,
+   "pengampu": [
+    "biro-org"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G17",
+   "jenis": "general",
+   "no": 17,
+   "komponen": "RB General",
+   "kelompok": "Capaian Pelaksanaan Kebijakan Reformasi Birokrasi",
+   "nama": "Tingkat Kepatuhan Standar Pelayanan Publik",
+   "satuan": "",
+   "target": 80.0,
+   "baseline": 94.58,
+   "pengampu": [
+    "biro-org"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G18",
+   "jenis": "general",
+   "no": 18,
+   "komponen": "RB General",
+   "kelompok": "Capaian Sasaran Strategis Reformasi Birokrasi",
+   "nama": "Indeks SPBE",
+   "satuan": "",
+   "target": null,
+   "baseline": 3.63,
+   "pengampu": [
+    "diskominfo"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G19",
+   "jenis": "general",
+   "no": 19,
+   "komponen": "RB General",
+   "kelompok": "Capaian Sasaran Strategis Reformasi Birokrasi",
+   "nama": "Opini BPK",
+   "satuan": "",
+   "target": 3.0,
+   "baseline": 3.0,
+   "pengampu": [
+    "inspektorat"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G20",
+   "jenis": "general",
+   "no": 20,
+   "komponen": "RB General",
+   "kelompok": "Capaian Sasaran Strategis Reformasi Birokrasi",
+   "nama": "Tindak Lanjut Rekomendasi",
+   "satuan": "",
+   "target": 74.53,
+   "baseline": 74.53,
+   "pengampu": [
+    "inspektorat"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G21",
+   "jenis": "general",
+   "no": 21,
+   "komponen": "RB General",
+   "kelompok": "Capaian Sasaran Strategis Reformasi Birokrasi",
+   "nama": "Indeks BerAkhlak",
+   "satuan": "",
+   "target": 85.0,
+   "baseline": 79.31,
+   "pengampu": [
+    "biro-org"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G22",
+   "jenis": "general",
+   "no": 22,
+   "komponen": "RB General",
+   "kelompok": "Capaian Sasaran Strategis Reformasi Birokrasi",
+   "nama": "Survei Penilaian Integritas",
+   "satuan": "",
+   "target": null,
+   "baseline": 72.04,
+   "pengampu": [
+    "inspektorat"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G23",
+   "jenis": "general",
+   "no": 23,
+   "komponen": "RB General",
+   "kelompok": "Capaian Sasaran Strategis Reformasi Birokrasi",
+   "nama": "Survei Kepuasan Masyarakat",
+   "satuan": "",
+   "target": 92.5,
+   "baseline": 92.18,
+   "pengampu": [
+    "biro-org"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G24",
+   "jenis": "general",
+   "no": 24,
+   "komponen": "RB General",
+   "kelompok": "Capaian Sasaran Strategis Reformasi Birokrasi",
+   "nama": "Capaian IKU Makro",
+   "satuan": "",
+   "target": null,
+   "baseline": 98.96,
+   "pengampu": [
+    "inspektorat",
+    "bappeda",
+    "biro-org"
+   ],
+   "pembagian": [
+    {
+     "bagian": "[Kelompok IKU makro 1]",
+     "bobot": null,
+     "pdId": "bappeda"
+    },
+    {
+     "bagian": "[Kelompok IKU makro 2]",
+     "bobot": null,
+     "pdId": "biro-org"
+    },
+    {
+     "bagian": "[Kelompok IKU makro 3]",
+     "bobot": null,
+     "pdId": "inspektorat"
+    }
+   ]
+  },
+  {
+   "id": "G25",
+   "jenis": "general",
+   "no": 25,
+   "komponen": "RB General",
+   "kelompok": "Capaian Sasaran Strategis Reformasi Birokrasi",
+   "nama": "Capaian IKU Non Makro",
+   "satuan": "",
+   "target": null,
+   "baseline": 86.67,
+   "pengampu": [],
+   "pembagian": []
+  },
+  {
+   "id": "G26",
+   "jenis": "general",
+   "no": 26,
+   "komponen": "RB General",
+   "kelompok": "Capaian Sasaran Strategis Reformasi Birokrasi",
+   "nama": "Indeks Kapabilitas Kelembagaan",
+   "satuan": "",
+   "target": null,
+   "baseline": null,
+   "pengampu": [
+    "biro-org"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "G27",
+   "jenis": "general",
+   "no": 27,
+   "komponen": "RB General",
+   "kelompok": "Capaian Sasaran Strategis Reformasi Birokrasi",
+   "nama": "Indeks Pemerintah Digital",
+   "satuan": "",
+   "target": null,
+   "baseline": null,
+   "pengampu": [
+    "diskominfo"
+   ],
+   "pembagian": []
+  },
+  {
+   "id": "T01",
+   "jenis": "tematik",
+   "no": 1,
+   "tema": "Pengentasan Kemiskinan",
+   "kelompok": "Pengentasan Kemiskinan",
+   "sasaran": "Menurunkan Kemiskinan",
+   "nama": "Persentase Penduduk Miskin",
+   "satuan": "Persentase",
+   "target": 3.46,
+   "baseline": null,
+   "pengampu": [
+    "bappeda"
+   ],
+   "pembagian": [],
+   "portalId": {
+    "sasaran_roadmap_id": 24987,
+    "indikator_roadmap_id": 30349
+   }
+  },
+  {
+   "id": "T02",
+   "jenis": "tematik",
+   "no": 2,
+   "tema": "Peningkatan Investasi",
+   "kelompok": "Peningkatan Investasi",
+   "sasaran": "Berkembangnya Investasi dan Sistem Logistik",
+   "nama": "Nilai Realisasi Investasi (PMA dan PMDN)",
+   "satuan": "Persentase",
+   "target": 26.4,
+   "baseline": null,
+   "pengampu": [
+    "dpmptsp"
+   ],
+   "pembagian": [],
+   "portalId": {
+    "sasaran_roadmap_id": 24988,
+    "indikator_roadmap_id": 30350
+   }
+  },
+  {
+   "id": "T03",
+   "jenis": "tematik",
+   "no": 3,
+   "tema": "Mendorong Hilirisasi",
+   "kelompok": "Mendorong Hilirisasi",
+   "sasaran": "Menguatnya fondasi transformasi ekonomi daerah yang berkelanjutan",
+   "nama": "Laju Pertumbuhan Ekonomi",
+   "satuan": "Persentase",
+   "target": 5.8,
+   "baseline": null,
+   "pengampu": [
+    "bappeda",
+    "disperin"
+   ],
+   "pembagian": [],
+   "portalId": {
+    "sasaran_roadmap_id": 25240,
+    "indikator_roadmap_id": 30633
+   }
+  },
+  {
+   "id": "T04",
+   "jenis": "tematik",
+   "no": 4,
+   "tema": "Mendorong Peningkatan Kualitas dan Akses Layanan Kesehatan",
+   "kelompok": "Mendorong Peningkatan Kualitas dan Akses Layanan Kesehatan",
+   "sasaran": "Meningkatnya Kualitas Kesehatan Masyarakat",
+   "nama": "Usia Harapan Hidup (UHH)",
+   "satuan": "Tahun",
+   "target": 74.66,
+   "baseline": null,
+   "pengampu": [
+    "dinkes"
+   ],
+   "pembagian": [],
+   "portalId": {
+    "sasaran_roadmap_id": 24999,
+    "indikator_roadmap_id": 30357
+   }
+  },
+  {
+   "id": "T05",
+   "jenis": "tematik",
+   "no": 5,
+   "tema": "Mendukung Ketahanan Pangan Nasional",
+   "kelompok": "Mendukung Ketahanan Pangan Nasional",
+   "sasaran": "Meningkatnya Ketahanan Pangan Daerah",
+   "nama": "Indeks Ketahanan Pangan",
+   "satuan": "Indeks",
+   "target": 83.83,
+   "baseline": null,
+   "pengampu": [
+    "distanpangan"
+   ],
+   "pembagian": [],
+   "portalId": {
+    "sasaran_roadmap_id": 25003,
+    "indikator_roadmap_id": 30369
+   }
+  },
+  {
+   "id": "T06",
+   "jenis": "tematik",
+   "no": 6,
+   "tema": "Mendorong Peningkatan Akses, Kualitas, dan Mutu Pendidikan",
+   "kelompok": "Mendorong Peningkatan Akses, Kualitas, dan Mutu Pendidikan",
+   "sasaran": "Peningkatan Kualitas Pendidikan",
+   "nama": "Rata-rata Lama Sekolah",
+   "satuan": "Tahun",
+   "target": 8.8,
+   "baseline": null,
+   "pengampu": [
+    "disdikbud"
+   ],
+   "pembagian": [],
+   "portalId": {
+    "sasaran_roadmap_id": 24995,
+    "indikator_roadmap_id": 30352
+   }
+  },
+  {
+   "id": "T07",
+   "jenis": "tematik",
+   "no": 6,
+   "tema": "Mendorong Peningkatan Akses, Kualitas, dan Mutu Pendidikan",
+   "kelompok": "Mendorong Peningkatan Akses, Kualitas, dan Mutu Pendidikan",
+   "sasaran": "Peningkatan Kualitas Pendidikan",
+   "nama": "Harapan Lama Sekolah",
+   "satuan": "Tahun",
+   "target": 13.46,
+   "baseline": null,
+   "pengampu": [
+    "disdikbud"
+   ],
+   "pembagian": [],
+   "portalId": {
+    "sasaran_roadmap_id": 24995,
+    "indikator_roadmap_id": 30354
+   }
+  }
+ ],
+ "akses": [
+  {
+   "id": "biro-org|G01",
+   "pdId": "biro-org",
+   "indikatorId": "G01",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "biro-org|G02",
+   "pdId": "biro-org",
+   "indikatorId": "G02",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "biro-org|G03",
+   "pdId": "biro-org",
+   "indikatorId": "G03",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "inspektorat|G04",
+   "pdId": "inspektorat",
+   "indikatorId": "G04",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "inspektorat|G05",
+   "pdId": "inspektorat",
+   "indikatorId": "G05",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "inspektorat|G06",
+   "pdId": "inspektorat",
+   "indikatorId": "G06",
+   "isiTarget": false,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "bappeda|G06",
+   "pdId": "bappeda",
+   "indikatorId": "G06",
+   "isiTarget": false,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "biro-org|G06",
+   "pdId": "biro-org",
+   "indikatorId": "G06",
+   "isiTarget": false,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "bappeda|G07",
+   "pdId": "bappeda",
+   "indikatorId": "G07",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "diskominfo|G08",
+   "pdId": "diskominfo",
+   "indikatorId": "G08",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "dispersip|G09",
+   "pdId": "dispersip",
+   "indikatorId": "G09",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "diskominfo|G10",
+   "pdId": "diskominfo",
+   "indikatorId": "G10",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "biro-hukum|G11",
+   "pdId": "biro-hukum",
+   "indikatorId": "G11",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "biro-hukum|G12",
+   "pdId": "biro-hukum",
+   "indikatorId": "G12",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "diskominfo|G13",
+   "pdId": "diskominfo",
+   "indikatorId": "G13",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "biro-pbj|G14",
+   "pdId": "biro-pbj",
+   "indikatorId": "G14",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "bkd|G15",
+   "pdId": "bkd",
+   "indikatorId": "G15",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "biro-org|G16",
+   "pdId": "biro-org",
+   "indikatorId": "G16",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "biro-org|G17",
+   "pdId": "biro-org",
+   "indikatorId": "G17",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "diskominfo|G18",
+   "pdId": "diskominfo",
+   "indikatorId": "G18",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "inspektorat|G19",
+   "pdId": "inspektorat",
+   "indikatorId": "G19",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "inspektorat|G20",
+   "pdId": "inspektorat",
+   "indikatorId": "G20",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "biro-org|G21",
+   "pdId": "biro-org",
+   "indikatorId": "G21",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "inspektorat|G22",
+   "pdId": "inspektorat",
+   "indikatorId": "G22",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "biro-org|G23",
+   "pdId": "biro-org",
+   "indikatorId": "G23",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "inspektorat|G24",
+   "pdId": "inspektorat",
+   "indikatorId": "G24",
+   "isiTarget": false,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "bappeda|G24",
+   "pdId": "bappeda",
+   "indikatorId": "G24",
+   "isiTarget": false,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "biro-org|G24",
+   "pdId": "biro-org",
+   "indikatorId": "G24",
+   "isiTarget": false,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "biro-org|G26",
+   "pdId": "biro-org",
+   "indikatorId": "G26",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "diskominfo|G27",
+   "pdId": "diskominfo",
+   "indikatorId": "G27",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": false
+  },
+  {
+   "id": "bappeda|T01",
+   "pdId": "bappeda",
+   "indikatorId": "T01",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": true
+  },
+  {
+   "id": "dpmptsp|T02",
+   "pdId": "dpmptsp",
+   "indikatorId": "T02",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": true
+  },
+  {
+   "id": "bappeda|T03",
+   "pdId": "bappeda",
+   "indikatorId": "T03",
+   "isiTarget": false,
+   "tag": true,
+   "isiTematik": true
+  },
+  {
+   "id": "disperin|T03",
+   "pdId": "disperin",
+   "indikatorId": "T03",
+   "isiTarget": false,
+   "tag": true,
+   "isiTematik": true
+  },
+  {
+   "id": "dinkes|T04",
+   "pdId": "dinkes",
+   "indikatorId": "T04",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": true
+  },
+  {
+   "id": "distanpangan|T05",
+   "pdId": "distanpangan",
+   "indikatorId": "T05",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": true
+  },
+  {
+   "id": "disdikbud|T06",
+   "pdId": "disdikbud",
+   "indikatorId": "T06",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": true
+  },
+  {
+   "id": "disdikbud|T07",
+   "pdId": "disdikbud",
+   "indikatorId": "T07",
+   "isiTarget": true,
+   "tag": true,
+   "isiTematik": true
+  }
+ ],
+ "subkegiatan": [
+  {
+   "id": "biro-org-0",
+   "kode": "9.01.01.2.01.0001",
+   "pdId": "biro-org",
+   "nama": "Penataan Kelembagaan Perangkat Daerah",
+   "indikatorOutput": "Jumlah dokumen hasil evaluasi kelembagaan",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    1,
+    0,
+    1
+   ],
+   "pagu": 310000000,
+   "realisasi": [
+    0,
+    1,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 228000000.0,
+   "dummy": true
+  },
+  {
+   "id": "biro-org-1",
+   "kode": "9.01.01.2.01.0002",
+   "pdId": "biro-org",
+   "nama": "Penyusunan Rencana Aksi dan Evaluasi Reformasi Birokrasi",
+   "indikatorOutput": "Jumlah dokumen rencana aksi dan laporan RB",
+   "satuan": "Dokumen",
+   "target": [
+    1,
+    0,
+    1,
+    1
+   ],
+   "pagu": 425000000,
+   "realisasi": [
+    1.1,
+    0,
+    1,
+    null
+   ],
+   "realisasiAnggaran": 304000000.0,
+   "dummy": true
+  },
+  {
+   "id": "biro-org-2",
+   "kode": "9.01.01.2.01.0003",
+   "pdId": "biro-org",
+   "nama": "Fasilitasi Peningkatan Kualitas Pelayanan Publik",
+   "indikatorOutput": "Jumlah unit layanan yang dievaluasi",
+   "satuan": "Unit",
+   "target": [
+    5,
+    10,
+    10,
+    5
+   ],
+   "pagu": 520000000,
+   "realisasi": [
+    4.0,
+    8.0,
+    8.0,
+    null
+   ],
+   "realisasiAnggaran": 299600000.0,
+   "dummy": true
+  },
+  {
+   "id": "biro-org-3",
+   "kode": "9.01.01.2.01.0004",
+   "pdId": "biro-org",
+   "nama": "Penguatan Akuntabilitas Kinerja Perangkat Daerah",
+   "indikatorOutput": "Jumlah dokumen pengukuran dan pelaporan kinerja",
+   "satuan": "Dokumen",
+   "target": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "pagu": 380000000,
+   "realisasi": [
+    0.8,
+    0.8,
+    0.5,
+    null
+   ],
+   "realisasiAnggaran": 254300000.0,
+   "dummy": true
+  },
+  {
+   "id": "biro-org-4",
+   "kode": "9.01.01.2.01.0005",
+   "pdId": "biro-org",
+   "nama": "Penyederhanaan Proses Bisnis dan Tata Laksana",
+   "indikatorOutput": "Jumlah proses bisnis yang disederhanakan",
+   "satuan": "Proses Bisnis",
+   "target": [
+    0,
+    5,
+    5,
+    5
+   ],
+   "pagu": 240000000,
+   "realisasi": [
+    0,
+    4.5,
+    2.5,
+    null
+   ],
+   "realisasiAnggaran": 163700000.0,
+   "dummy": true
+  },
+  {
+   "id": "biro-org-5",
+   "kode": "9.01.01.2.01.0006",
+   "pdId": "biro-org",
+   "nama": "Internalisasi Nilai BerAKHLAK",
+   "indikatorOutput": "Jumlah perangkat daerah yang mengikuti internalisasi",
+   "satuan": "Perangkat Daerah",
+   "target": [
+    10,
+    10,
+    10,
+    11
+   ],
+   "pagu": 180000000,
+   "realisasi": [
+    9.0,
+    10,
+    10,
+    null
+   ],
+   "realisasiAnggaran": 114200000.0,
+   "dummy": true
+  },
+  {
+   "id": "biro-org-6",
+   "kode": "9.01.01.2.01.0007",
+   "pdId": "biro-org",
+   "nama": "Survei Kepuasan Masyarakat Terpadu",
+   "indikatorOutput": "Jumlah laporan survei kepuasan masyarakat",
+   "satuan": "Laporan",
+   "target": [
+    0,
+    1,
+    0,
+    1
+   ],
+   "pagu": 290000000,
+   "realisasi": [
+    0,
+    1,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 139000000.0,
+   "dummy": true
+  },
+  {
+   "id": "inspektorat-0",
+   "kode": "9.02.01.2.01.0001",
+   "pdId": "inspektorat",
+   "nama": "Pengawasan Penyelenggaraan Pemerintahan Daerah",
+   "indikatorOutput": "Jumlah laporan hasil pengawasan",
+   "satuan": "Laporan",
+   "target": [
+    10,
+    15,
+    15,
+    10
+   ],
+   "pagu": 1250000000,
+   "realisasi": [
+    10,
+    7.5,
+    16.5,
+    null
+   ],
+   "realisasiAnggaran": 746400000.0,
+   "dummy": true
+  },
+  {
+   "id": "inspektorat-1",
+   "kode": "9.02.01.2.01.0002",
+   "pdId": "inspektorat",
+   "nama": "Penilaian Maturitas SPIP",
+   "indikatorOutput": "Jumlah dokumen penilaian maturitas SPIP",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    0,
+    1,
+    0
+   ],
+   "pagu": 210000000,
+   "realisasi": [
+    0,
+    0,
+    0.9,
+    null
+   ],
+   "realisasiAnggaran": 110300000.0,
+   "dummy": true
+  },
+  {
+   "id": "inspektorat-2",
+   "kode": "9.02.01.2.01.0003",
+   "pdId": "inspektorat",
+   "nama": "Pendampingan Pembangunan Zona Integritas",
+   "indikatorOutput": "Jumlah unit kerja yang didampingi ZI",
+   "satuan": "Unit Kerja",
+   "target": [
+    0,
+    5,
+    5,
+    0
+   ],
+   "pagu": 275000000,
+   "realisasi": [
+    0,
+    2.5,
+    4.5,
+    null
+   ],
+   "realisasiAnggaran": 206200000.0,
+   "dummy": true
+  },
+  {
+   "id": "inspektorat-3",
+   "kode": "9.02.01.2.01.0004",
+   "pdId": "inspektorat",
+   "nama": "Evaluasi Akuntabilitas Kinerja Internal",
+   "indikatorOutput": "Jumlah laporan hasil evaluasi AKIP",
+   "satuan": "Laporan",
+   "target": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "pagu": 260000000,
+   "realisasi": [
+    0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 173400000.0,
+   "dummy": true
+  },
+  {
+   "id": "inspektorat-4",
+   "kode": "9.02.01.2.01.0005",
+   "pdId": "inspektorat",
+   "nama": "Pemantauan Tindak Lanjut Hasil Pemeriksaan",
+   "indikatorOutput": "Jumlah laporan pemantauan tindak lanjut",
+   "satuan": "Laporan",
+   "target": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "pagu": 190000000,
+   "realisasi": [
+    1,
+    0.8,
+    0.8,
+    null
+   ],
+   "realisasiAnggaran": 102200000.0,
+   "dummy": true
+  },
+  {
+   "id": "bappeda-0",
+   "kode": "9.03.01.2.01.0001",
+   "pdId": "bappeda",
+   "nama": "Penyusunan Dokumen Perencanaan Perangkat Daerah",
+   "indikatorOutput": "Jumlah dokumen perencanaan yang disusun",
+   "satuan": "Dokumen",
+   "target": [
+    1,
+    1,
+    0,
+    1
+   ],
+   "pagu": 450000000,
+   "realisasi": [
+    0.9,
+    1,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 297500000.0,
+   "dummy": true
+  },
+  {
+   "id": "bappeda-1",
+   "kode": "9.03.01.2.01.0002",
+   "pdId": "bappeda",
+   "nama": "Koordinasi Penyusunan Perencanaan Kinerja Daerah",
+   "indikatorOutput": "Jumlah dokumen perencanaan kinerja daerah",
+   "satuan": "Dokumen",
+   "target": [
+    1,
+    0,
+    0,
+    1
+   ],
+   "pagu": 330000000,
+   "realisasi": [
+    0.8,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 232400000.0,
+   "dummy": true
+  },
+  {
+   "id": "bappeda-2",
+   "kode": "9.03.01.2.01.0003",
+   "pdId": "bappeda",
+   "nama": "Monitoring dan Evaluasi Capaian IKU Daerah",
+   "indikatorOutput": "Jumlah laporan evaluasi capaian IKU",
+   "satuan": "Laporan",
+   "target": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "pagu": 275000000,
+   "realisasi": [
+    1,
+    1,
+    0.9,
+    null
+   ],
+   "realisasiAnggaran": 158600000.0,
+   "dummy": true
+  },
+  {
+   "id": "diskominfo-0",
+   "kode": "9.04.01.2.01.0001",
+   "pdId": "diskominfo",
+   "nama": "Penatalaksanaan dan Pengawasan e-Government",
+   "indikatorOutput": "Jumlah dokumen arsitektur dan peta rencana SPBE",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    0,
+    1,
+    0
+   ],
+   "pagu": 250000000,
+   "realisasi": [
+    0,
+    0,
+    0.8,
+    null
+   ],
+   "realisasiAnggaran": 149900000.0,
+   "dummy": true
+  },
+  {
+   "id": "diskominfo-1",
+   "kode": "9.04.01.2.01.0002",
+   "pdId": "diskominfo",
+   "nama": "Pengembangan Aplikasi dan Proses Bisnis Pemerintahan Berbasis Elektronik",
+   "indikatorOutput": "Jumlah aplikasi layanan yang terintegrasi",
+   "satuan": "Aplikasi",
+   "target": [
+    0,
+    2,
+    2,
+    1
+   ],
+   "pagu": 1450000000,
+   "realisasi": [
+    0,
+    1.8,
+    1.6,
+    null
+   ],
+   "realisasiAnggaran": 1001600000.0,
+   "dummy": true
+  },
+  {
+   "id": "diskominfo-2",
+   "kode": "9.04.01.2.01.0003",
+   "pdId": "diskominfo",
+   "nama": "Pengelolaan Pusat Data Pemerintah Daerah",
+   "indikatorOutput": "Persentase ketersediaan layanan pusat data",
+   "satuan": "Persen",
+   "target": [
+    99,
+    99,
+    99,
+    99
+   ],
+   "pagu": 820000000,
+   "realisasi": [
+    49.5,
+    79.2,
+    89.1,
+    null
+   ],
+   "realisasiAnggaran": 466900000.0,
+   "dummy": true
+  },
+  {
+   "id": "diskominfo-3",
+   "kode": "9.04.01.2.01.0004",
+   "pdId": "diskominfo",
+   "nama": "Pengelolaan Pengaduan Masyarakat",
+   "indikatorOutput": "Jumlah laporan tindak lanjut aduan",
+   "satuan": "Laporan",
+   "target": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "pagu": 180000000,
+   "realisasi": [
+    0.8,
+    1,
+    0.5,
+    null
+   ],
+   "realisasiAnggaran": 103700000.0,
+   "dummy": true
+  },
+  {
+   "id": "diskominfo-4",
+   "kode": "9.04.01.2.01.0005",
+   "pdId": "diskominfo",
+   "nama": "Penyelenggaraan Statistik Sektoral",
+   "indikatorOutput": "Jumlah dokumen data statistik sektoral",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "pagu": 310000000,
+   "realisasi": [
+    0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 214400000.0,
+   "dummy": true
+  },
+  {
+   "id": "diskominfo-5",
+   "kode": "9.04.01.2.01.0006",
+   "pdId": "diskominfo",
+   "nama": "Pengelolaan Keamanan Informasi Pemerintahan",
+   "indikatorOutput": "Jumlah layanan keamanan informasi",
+   "satuan": "Layanan",
+   "target": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "pagu": 410000000,
+   "realisasi": [
+    0.8,
+    1,
+    0.5,
+    null
+   ],
+   "realisasiAnggaran": 200400000.0,
+   "dummy": true
+  },
+  {
+   "id": "dispersip-0",
+   "kode": "9.05.01.2.01.0001",
+   "pdId": "dispersip",
+   "nama": "Pengelolaan Arsip Dinamis dan Alih Media Digital",
+   "indikatorOutput": "Jumlah arsip yang dialihmediakan",
+   "satuan": "Berkas",
+   "target": [
+    2000,
+    3000,
+    3000,
+    2000
+   ],
+   "pagu": 360000000,
+   "realisasi": [
+    2000,
+    3300.0,
+    2400.0,
+    null
+   ],
+   "realisasiAnggaran": 257800000.0,
+   "dummy": true
+  },
+  {
+   "id": "dispersip-1",
+   "kode": "9.05.01.2.01.0002",
+   "pdId": "dispersip",
+   "nama": "Pembinaan Kearsipan Perangkat Daerah",
+   "indikatorOutput": "Jumlah perangkat daerah yang dibina",
+   "satuan": "Perangkat Daerah",
+   "target": [
+    10,
+    10,
+    10,
+    10
+   ],
+   "pagu": 150000000,
+   "realisasi": [
+    10,
+    11.0,
+    8.0,
+    null
+   ],
+   "realisasiAnggaran": 86800000.0,
+   "dummy": true
+  },
+  {
+   "id": "biro-hukum-0",
+   "kode": "9.06.01.2.01.0001",
+   "pdId": "biro-hukum",
+   "nama": "Penyusunan dan Harmonisasi Produk Hukum Daerah",
+   "indikatorOutput": "Jumlah produk hukum yang diharmonisasi",
+   "satuan": "Produk Hukum",
+   "target": [
+    10,
+    15,
+    15,
+    10
+   ],
+   "pagu": 480000000,
+   "realisasi": [
+    10,
+    13.5,
+    15,
+    null
+   ],
+   "realisasiAnggaran": 338300000.0,
+   "dummy": true
+  },
+  {
+   "id": "biro-hukum-1",
+   "kode": "9.06.01.2.01.0002",
+   "pdId": "biro-hukum",
+   "nama": "Analisis dan Evaluasi Kebijakan Daerah",
+   "indikatorOutput": "Jumlah dokumen analisis kebijakan",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "pagu": 230000000,
+   "realisasi": [
+    0,
+    1.1,
+    1.1,
+    null
+   ],
+   "realisasiAnggaran": 135000000.0,
+   "dummy": true
+  },
+  {
+   "id": "biro-pbj-0",
+   "kode": "9.07.01.2.01.0001",
+   "pdId": "biro-pbj",
+   "nama": "Pengelolaan Layanan Pengadaan Secara Elektronik",
+   "indikatorOutput": "Jumlah paket pengadaan yang dikelola",
+   "satuan": "Paket",
+   "target": [
+    40,
+    80,
+    60,
+    20
+   ],
+   "pagu": 520000000,
+   "realisasi": [
+    36.0,
+    88.0,
+    48.0,
+    null
+   ],
+   "realisasiAnggaran": 273200000.0,
+   "dummy": true
+  },
+  {
+   "id": "biro-pbj-1",
+   "kode": "9.07.01.2.01.0002",
+   "pdId": "biro-pbj",
+   "nama": "Pembinaan Pelaku Pengadaan",
+   "indikatorOutput": "Jumlah pelaku pengadaan yang dibina",
+   "satuan": "Orang",
+   "target": [
+    50,
+    50,
+    50,
+    50
+   ],
+   "pagu": 170000000,
+   "realisasi": [
+    45.0,
+    55.0,
+    50,
+    null
+   ],
+   "realisasiAnggaran": 104500000.0,
+   "dummy": true
+  },
+  {
+   "id": "bkd-0",
+   "kode": "9.08.01.2.01.0001",
+   "pdId": "bkd",
+   "nama": "Penilaian Kompetensi Aparatur",
+   "indikatorOutput": "Jumlah ASN yang dinilai kompetensinya",
+   "satuan": "Orang",
+   "target": [
+    150,
+    200,
+    200,
+    100
+   ],
+   "pagu": 640000000,
+   "realisasi": [
+    165.0,
+    160.0,
+    220.0,
+    null
+   ],
+   "realisasiAnggaran": 379900000.0,
+   "dummy": true
+  },
+  {
+   "id": "bkd-1",
+   "kode": "9.08.01.2.01.0002",
+   "pdId": "bkd",
+   "nama": "Pengelolaan Sistem Informasi Kepegawaian",
+   "indikatorOutput": "Jumlah layanan kepegawaian berbasis elektronik",
+   "satuan": "Layanan",
+   "target": [
+    2,
+    2,
+    2,
+    2
+   ],
+   "pagu": 390000000,
+   "realisasi": [
+    1.8,
+    1.8,
+    2,
+    null
+   ],
+   "realisasiAnggaran": 209900000.0,
+   "dummy": true
+  },
+  {
+   "id": "bkd-2",
+   "kode": "9.08.01.2.01.0003",
+   "pdId": "bkd",
+   "nama": "Penerapan Sistem Merit dalam Manajemen ASN",
+   "indikatorOutput": "Jumlah dokumen penerapan sistem merit",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    1,
+    0,
+    1
+   ],
+   "pagu": 210000000,
+   "realisasi": [
+    0,
+    1,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 103900000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-000",
+   "kode": "9.90.01.2.01.0001",
+   "pdId": "bappeda",
+   "nama": "[Dummy] Sub kegiatan pendukung: 1. Desk review dan pemetaan ulang sub kegiatan yang ter tagging",
+   "indikatorOutput": "Jumlah laporan terkait kegiatan peningkatan sub kegiatan yang menyasar kemiskinan",
+   "satuan": "Laporan",
+   "target": [
+    0,
+    0,
+    1.0,
+    0
+   ],
+   "pagu": 6000000.0,
+   "realisasi": [
+    0,
+    0,
+    1.0,
+    null
+   ],
+   "realisasiAnggaran": 2995000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-001",
+   "kode": "9.90.01.2.01.0002",
+   "pdId": "bappeda",
+   "nama": "[Dummy] Sub kegiatan pendukung: Menyusun Standar Operasional Prosedur (SOP) perencanaan, pelaksanaan, ",
+   "indikatorOutput": "Jumlah SOP penanggulangan kemiskinan",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    0,
+    0,
+    1.0
+   ],
+   "pagu": 20000000.0,
+   "realisasi": [
+    0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 12372000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-002",
+   "kode": "9.90.01.2.01.0003",
+   "pdId": "bappeda",
+   "nama": "[Dummy] Sub kegiatan pendukung: Melakukan bimtek terkait pemanfaatan DTSEN",
+   "indikatorOutput": "Jumlah laporan terkait kegiatan sosialisasi",
+   "satuan": "Laporan",
+   "target": [
+    0,
+    0,
+    1.0,
+    0
+   ],
+   "pagu": 12000000.0,
+   "realisasi": [
+    0,
+    0,
+    0.5,
+    null
+   ],
+   "realisasiAnggaran": 7850000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-003",
+   "kode": "9.90.01.2.01.0004",
+   "pdId": "bappeda",
+   "nama": "[Dummy] Sub kegiatan pendukung: Melakukan monitoring dan evaluasi pelaksanaan secara bertahap",
+   "indikatorOutput": "Jumlah laporan kegiatan monev",
+   "satuan": "Laporan",
+   "target": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pagu": 200000000.0,
+   "realisasi": [
+    1.0,
+    1.0,
+    1.0,
+    null
+   ],
+   "realisasiAnggaran": 133167000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-004",
+   "kode": "9.90.01.2.01.0005",
+   "pdId": "bappeda",
+   "nama": "[Dummy] Sub kegiatan pendukung: Melakukan koordinasi dengan instansi pengelola DTSEN untuk perluasan a",
+   "indikatorOutput": "Jumlah usulan terhadap akun pemanfaatan DTSEN",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    1.0,
+    0,
+    0
+   ],
+   "pagu": 1000000.0,
+   "realisasi": [
+    0,
+    0.5,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 597000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-005",
+   "kode": "9.90.01.2.01.0006",
+   "pdId": "dpmptsp",
+   "nama": "[Dummy] Sub kegiatan pendukung: Melakukan asistensi dan koordinasi dengan OP terkait untuk penambahan ",
+   "indikatorOutput": "Dokumen Pelaksanaan Perubahan Anggaran",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    0,
+    0,
+    1.0
+   ],
+   "pagu": 3050000.0,
+   "realisasi": [
+    0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 1492000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-006",
+   "kode": "9.90.01.2.01.0007",
+   "pdId": "dpmptsp",
+   "nama": "[Dummy] Sub kegiatan pendukung: Melakukan audit SOP Eksisting dengan Memilah SOP mana yang masih relev",
+   "indikatorOutput": "Dokumen SOP yang terperbaharui berkala",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    0,
+    0,
+    1.0
+   ],
+   "pagu": 13010000.0,
+   "realisasi": [
+    0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 9763000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-007",
+   "kode": "9.90.01.2.01.0008",
+   "pdId": "dpmptsp",
+   "nama": "[Dummy] Sub kegiatan pendukung: Mengusulkan pengangkatan JF PKPM pada Dinas PMPTSP melalui penyesuaian",
+   "indikatorOutput": "Jumlah Jabatan Fungsional PKPM",
+   "satuan": "Orang",
+   "target": [
+    0,
+    0,
+    5.0,
+    0
+   ],
+   "pagu": 27000000.0,
+   "realisasi": [
+    0,
+    0,
+    5.0,
+    null
+   ],
+   "realisasiAnggaran": 15312000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-008",
+   "kode": "9.90.01.2.01.0009",
+   "pdId": "dpmptsp",
+   "nama": "[Dummy] Sub kegiatan pendukung: Melakukan pengawasan pelaksanaan penanaman modal dengan melibatkan DPM",
+   "indikatorOutput": "Dokumen laporan pelaksanaan pengawasan penanaman modal",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    0,
+    0,
+    1.0
+   ],
+   "pagu": 101100000.0,
+   "realisasi": [
+    0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 72081000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-009",
+   "kode": "9.90.01.2.01.0010",
+   "pdId": "dpmptsp",
+   "nama": "[Dummy] Sub kegiatan pendukung: -Mengimplementasikan protokol pencadangan (backup) yang menyimpan sali",
+   "indikatorOutput": "Dokumen Teknis yang memberikan laporan backup secara berkala",
+   "satuan": "Dokumen",
+   "target": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "pagu": 7320000.0,
+   "realisasi": [
+    0.8,
+    1.0,
+    0.8,
+    null
+   ],
+   "realisasiAnggaran": 4134000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-010",
+   "kode": "9.90.01.2.01.0011",
+   "pdId": "dpmptsp",
+   "nama": "[Dummy] Sub kegiatan pendukung: Mengembangkan aplikasi BEKANTAN (Berinvestasi di Kalimantan Selatan) y",
+   "indikatorOutput": "Jumlah aplikasi yang menyajikan kumpulan data potensi investasi",
+   "satuan": "Aplikasi",
+   "target": [
+    0,
+    0,
+    1.0,
+    0
+   ],
+   "pagu": 350000000.0,
+   "realisasi": [
+    0,
+    0,
+    0.8,
+    null
+   ],
+   "realisasiAnggaran": 252967000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-011",
+   "kode": "9.90.01.2.01.0012",
+   "pdId": "disdikbud",
+   "nama": "[Dummy] Sub kegiatan pendukung: Penyusunan dan penyempurnaan SOP layanan pendidikan",
+   "indikatorOutput": "SOP layanan pendidikan",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "pagu": 0,
+   "realisasi": [
+    0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 0.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-012",
+   "kode": "9.90.01.2.01.0013",
+   "pdId": "disdikbud",
+   "nama": "[Dummy] Sub kegiatan pendukung: Pelatihan dan pengembangan kompetensi guru dan tenaga kependidikan",
+   "indikatorOutput": "Jumlah guru terlatih",
+   "satuan": "Program",
+   "target": [
+    0,
+    0,
+    0,
+    1.0
+   ],
+   "pagu": 16822574125.0,
+   "realisasi": [
+    0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 9064123000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-014",
+   "kode": "9.90.01.2.01.0015",
+   "pdId": "disdikbud",
+   "nama": "[Dummy] Sub kegiatan pendukung: Pengembangan program inovasi pendidikan daerah",
+   "indikatorOutput": "Program inovasi pendidikan",
+   "satuan": "Program",
+   "target": [
+    0,
+    0,
+    0,
+    1.0
+   ],
+   "pagu": 1330000000.0,
+   "realisasi": [
+    0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 545610000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-015",
+   "kode": "9.90.01.2.01.0016",
+   "pdId": "disdikbud",
+   "nama": "[Dummy] Sub kegiatan pendukung: Pengembangan sistem informasi pendidikan daerah",
+   "indikatorOutput": "Sistem informasi pendidikan",
+   "satuan": "Program",
+   "target": [
+    0,
+    0,
+    0,
+    1.0
+   ],
+   "pagu": 1330000000.0,
+   "realisasi": [
+    0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 693553000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-016",
+   "kode": "9.90.01.2.01.0017",
+   "pdId": "disdikbud",
+   "nama": "[Dummy] Sub kegiatan pendukung: Penguatan perencanaan berbasis data melalui integrasi data pendidikan ",
+   "indikatorOutput": "Dokumen perencanaan berbasis data",
+   "satuan": "Program",
+   "target": [
+    0,
+    0,
+    0,
+    1.0
+   ],
+   "pagu": 1902622000.0,
+   "realisasi": [
+    0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 1483118000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-017",
+   "kode": "9.90.01.2.01.0018",
+   "pdId": "dinkes",
+   "nama": "[Dummy] Sub kegiatan pendukung: 1. Rapat koordinasi perencanaan provinsi dan kab/kota;",
+   "indikatorOutput": "Persentase Penyelesaian Dokumen Perencanaan",
+   "satuan": "Persentase",
+   "target": [
+    30.0,
+    65.0,
+    100.0,
+    100.0
+   ],
+   "pagu": 613757500.0,
+   "realisasi": [
+    24.0,
+    52.0,
+    50.0,
+    null
+   ],
+   "realisasiAnggaran": 287419000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-018",
+   "kode": "9.90.01.2.01.0019",
+   "pdId": "dinkes",
+   "nama": "[Dummy] Sub kegiatan pendukung: 1. Monev SISRUTE pada Fasyankes;",
+   "indikatorOutput": "Persentase Respon Time SISRUTE Rumah Sakit",
+   "satuan": "Persentase",
+   "target": [
+    25.0,
+    50.0,
+    75.0,
+    100.0
+   ],
+   "pagu": 112123400.0,
+   "realisasi": [
+    20.0,
+    40.0,
+    75.0,
+    null
+   ],
+   "realisasiAnggaran": 64296000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-019",
+   "kode": "9.90.01.2.01.0020",
+   "pdId": "dinkes",
+   "nama": "[Dummy] Sub kegiatan pendukung: 1. Pemenuhan Tenaga Kesehatan di Fasilitas Layanan Kesehatan;",
+   "indikatorOutput": "Persentase Fasyankes dengan SDMK sesuai Standart",
+   "satuan": "Persentase",
+   "target": [
+    25.0,
+    50.0,
+    75.0,
+    100.0
+   ],
+   "pagu": 16036405.0,
+   "realisasi": [
+    25.0,
+    45.0,
+    60.0,
+    null
+   ],
+   "realisasiAnggaran": 7911000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-020",
+   "kode": "9.90.01.2.01.0021",
+   "pdId": "dinkes",
+   "nama": "[Dummy] Sub kegiatan pendukung: Evaluasi kinerja urusan bidang kesehatan",
+   "indikatorOutput": "Dokumen Laporan Kinerja Dinas Kesehatan",
+   "satuan": "Dokumen",
+   "target": [
+    25.0,
+    50.0,
+    75.0,
+    100.0
+   ],
+   "pagu": 97247000.0,
+   "realisasi": [
+    27.5,
+    50.0,
+    60.0,
+    null
+   ],
+   "realisasiAnggaran": 54426000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-021",
+   "kode": "9.90.01.2.01.0022",
+   "pdId": "dinkes",
+   "nama": "[Dummy] Sub kegiatan pendukung: Monev pelaksanaan SPM dan Satu Sehat",
+   "indikatorOutput": "Persentase sistem informasi kesehatan yang terintegrasi",
+   "satuan": "Persentase",
+   "target": [
+    25.0,
+    50.0,
+    75.0,
+    100.0
+   ],
+   "pagu": 269272600.0,
+   "realisasi": [
+    25.0,
+    55.0,
+    75.0,
+    null
+   ],
+   "realisasiAnggaran": 112581000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-022",
+   "kode": "9.90.01.2.01.0023",
+   "pdId": "dinkes",
+   "nama": "[Dummy] Sub kegiatan pendukung: Workshop optimalisasi pemanfaatan telemidicine",
+   "indikatorOutput": "Jumlah Fasilitas Pelayanan Kesehatan (Fasyankes) yang Melayani Konsultasi Jarak Jauh Antar Fasyankes Melalui Pelayanan Telemedicine untuk Mendapatkan Akses Pelayanan Kesehatan yang Berkualitas",
+   "satuan": "Unit",
+   "target": [
+    25.0,
+    50.0,
+    75.0,
+    100.0
+   ],
+   "pagu": 129928000.0,
+   "realisasi": [
+    20.0,
+    25.0,
+    75.0,
+    null
+   ],
+   "realisasiAnggaran": 75453000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-023",
+   "kode": "9.90.01.2.01.0024",
+   "pdId": "distanpangan",
+   "nama": "[Dummy] Sub kegiatan pendukung: Mengoptimalkan lahan untuk ditanam 2-3kali setahun.",
+   "indikatorOutput": "Peningkatan Indeks Pertanaman",
+   "satuan": "Persentase",
+   "target": [
+    0.75,
+    1.5,
+    2.25,
+    3.0
+   ],
+   "pagu": 18295072000.0,
+   "realisasi": [
+    0.38,
+    1.65,
+    2.25,
+    null
+   ],
+   "realisasiAnggaran": 10858790000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-024",
+   "kode": "9.90.01.2.01.0025",
+   "pdId": "distanpangan",
+   "nama": "[Dummy] Sub kegiatan pendukung: Mengoptimalkan lahan untuk di tanam 2-3 kali setahun",
+   "indikatorOutput": "Peningkatan Indeks Pertanaman",
+   "satuan": "Persentase",
+   "target": [
+    0.07,
+    0.15,
+    0.22,
+    0.3
+   ],
+   "pagu": 1962900000.0,
+   "realisasi": [
+    0.08,
+    0.15,
+    0.22,
+    null
+   ],
+   "realisasiAnggaran": 1292100000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-025",
+   "kode": "9.90.01.2.01.0026",
+   "pdId": "distanpangan",
+   "nama": "[Dummy] Sub kegiatan pendukung: Mitigasi Risiko dan Perlindungan Petani (Pre-Bencana), Penanganan Saat",
+   "indikatorOutput": "Asuransi Usaha Tani Padi (AUTP)",
+   "satuan": "Persentase",
+   "target": [
+    97.5,
+    97.5,
+    97.5,
+    97.5
+   ],
+   "pagu": 130749000.0,
+   "realisasi": [
+    97.5,
+    48.75,
+    78.0,
+    null
+   ],
+   "realisasiAnggaran": 99088000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-026",
+   "kode": "9.90.01.2.01.0027",
+   "pdId": "distanpangan",
+   "nama": "[Dummy] Sub kegiatan pendukung: Menyusun Standar Operasional Prosedur (SOP) Kegiatan Hilirisasi",
+   "indikatorOutput": "Jumlah Dokumen Standar Operasional Prosedur (SOP)",
+   "satuan": "Persentase",
+   "target": [
+    25.0,
+    50.0,
+    75.0,
+    100.0
+   ],
+   "pagu": 0,
+   "realisasi": [
+    25.0,
+    50.0,
+    82.5,
+    null
+   ],
+   "realisasiAnggaran": 0.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-027",
+   "kode": "9.90.01.2.01.0028",
+   "pdId": "distanpangan",
+   "nama": "[Dummy] Sub kegiatan pendukung: Bantuan sarana pertanian kepada kelompok tani",
+   "indikatorOutput": "Bantuan sarana pertanian kepada kelompok tani",
+   "satuan": "Persentase",
+   "target": [
+    25.0,
+    50.0,
+    75.0,
+    100.0
+   ],
+   "pagu": 18295000.0,
+   "realisasi": [
+    22.5,
+    50.0,
+    67.5,
+    null
+   ],
+   "realisasiAnggaran": 11219000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-028",
+   "kode": "9.90.01.2.01.0029",
+   "pdId": "distanpangan",
+   "nama": "[Dummy] Sub kegiatan pendukung: Melaksanakan Evaluasi kinerja",
+   "indikatorOutput": "Dokumen Laporan Kinerja Dinas",
+   "satuan": "Dokumen",
+   "target": [
+    4.59,
+    21.05,
+    41.0,
+    100.0
+   ],
+   "pagu": 950564000.0,
+   "realisasi": [
+    2.29,
+    21.05,
+    36.9,
+    null
+   ],
+   "realisasiAnggaran": 496160000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-029",
+   "kode": "9.90.01.2.01.0030",
+   "pdId": "distanpangan",
+   "nama": "[Dummy] Sub kegiatan pendukung: Memberikan bantuan Sarana Produksi Pertanian (Saprodi) kepada petani y",
+   "indikatorOutput": "Persentase Bantuan Saprodi Kepada Kelompok tani yang memiliki lahan rawa",
+   "satuan": "Persentase",
+   "target": [
+    0,
+    0,
+    50.0,
+    100.0
+   ],
+   "pagu": 138988000.0,
+   "realisasi": [
+    0,
+    0,
+    50.0,
+    null
+   ],
+   "realisasiAnggaran": 81387000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-038",
+   "kode": "9.90.01.2.01.0039",
+   "pdId": "disperin",
+   "nama": "[Dummy] Sub kegiatan pendukung: Melaksanakan Rapat koordinasi perencanaan provinsi dan kab/kota;",
+   "indikatorOutput": "Tersusunnya Dokumen Perencanaan Perangkat Daerah",
+   "satuan": "Dokumen",
+   "target": [
+    100.0,
+    0,
+    0,
+    0
+   ],
+   "pagu": 67805000.0,
+   "realisasi": [
+    50.0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 34924000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-039",
+   "kode": "9.90.01.2.01.0040",
+   "pdId": "disperin",
+   "nama": "[Dummy] Sub kegiatan pendukung: Menyusun Standar Operasional Prosedur (SOP) Kegiatan Hilirisasi",
+   "indikatorOutput": "Tersedianya Standar Operasional Prosedur (SOP) Kegiatan Hilirisasi",
+   "satuan": "Dokumen",
+   "target": [
+    25.0,
+    50.0,
+    75.0,
+    100.0
+   ],
+   "pagu": 0,
+   "realisasi": [
+    25.0,
+    50.0,
+    60.0,
+    null
+   ],
+   "realisasiAnggaran": 0.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-040",
+   "kode": "9.90.01.2.01.0041",
+   "pdId": "disperin",
+   "nama": "[Dummy] Sub kegiatan pendukung: Penumbuhan Wira Usaha Baru Industri Pangan Se Kalimantan Selatan",
+   "indikatorOutput": "Terbentuknya industri pengolahan pangan",
+   "satuan": "Unit",
+   "target": [
+    0,
+    26.0,
+    0,
+    0
+   ],
+   "pagu": 100000000.0,
+   "realisasi": [
+    0,
+    20.8,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 60988000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-041",
+   "kode": "9.90.01.2.01.0042",
+   "pdId": "disperin",
+   "nama": "[Dummy] Sub kegiatan pendukung: Pelatihan Diversifikasi Produk Olahan Hasil Sumber Daya Alam Perikanan",
+   "indikatorOutput": "Terbentuknya industri pengolahan ikan",
+   "satuan": "Unit",
+   "target": [
+    0,
+    27.0,
+    0,
+    0
+   ],
+   "pagu": 204549900.0,
+   "realisasi": [
+    0,
+    13.5,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 151193000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-042",
+   "kode": "9.90.01.2.01.0043",
+   "pdId": "disperin",
+   "nama": "[Dummy] Sub kegiatan pendukung: - Fasilitasi SNI",
+   "indikatorOutput": "Tersedianya Sertifikat Halal/BPOM/SNI Produk Pangan & Ikan",
+   "satuan": "Unit",
+   "target": [
+    0,
+    0,
+    1.0,
+    100.0
+   ],
+   "pagu": 228538600.0,
+   "realisasi": [
+    0,
+    0,
+    1.0,
+    null
+   ],
+   "realisasiAnggaran": 171735000.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-043",
+   "kode": "9.90.01.2.01.0044",
+   "pdId": "disperin",
+   "nama": "[Dummy] Sub kegiatan pendukung: Mengembangkan Sistem Informasi Pendaftaran Pelatihan Industri (SIMANIS",
+   "indikatorOutput": "Tersedianya akses informasi dan proses pendaftaran pelatihan peningkatan kompetensi kerja secara online",
+   "satuan": "Sistem",
+   "target": [
+    100.0,
+    0,
+    0,
+    0
+   ],
+   "pagu": 0,
+   "realisasi": [
+    110.0,
+    0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 0.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-044",
+   "kode": "9.90.01.2.01.0045",
+   "pdId": "bappeda",
+   "nama": "[Dummy] Sub kegiatan pendukung: Penyusunan dan sinkronisasi rencana aksi/roadmap hilirisasi ke dalam d",
+   "indikatorOutput": "Jumlah dokumen/laporan sinkronisasi perencanaan hilirisasi daerah",
+   "satuan": "Dokumen",
+   "target": [
+    1.0,
+    1.0,
+    0,
+    0
+   ],
+   "pagu": 0,
+   "realisasi": [
+    0.5,
+    0.5,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 0.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-045",
+   "kode": "9.90.01.2.01.0046",
+   "pdId": "bappeda",
+   "nama": "[Dummy] Sub kegiatan pendukung: Jumlah SOP/proses bisnis percepatan hilirisasi",
+   "indikatorOutput": "Jumlah SOP/proses bisnis percepatan hilirisasi",
+   "satuan": "Dokumen",
+   "target": [
+    0,
+    1.0,
+    0,
+    0
+   ],
+   "pagu": 0,
+   "realisasi": [
+    0,
+    1.0,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 0.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-046",
+   "kode": "9.90.01.2.01.0047",
+   "pdId": "bappeda",
+   "nama": "[Dummy] Sub kegiatan pendukung: Pelaksanaan desk, bimbingan teknis, atau penguatan kapasitas aparatur ",
+   "indikatorOutput": "Jumlah laporan kegiatan peningkatan kapasitas aparatur",
+   "satuan": "Laporan",
+   "target": [
+    0,
+    1.0,
+    0,
+    0
+   ],
+   "pagu": 0,
+   "realisasi": [
+    0,
+    1.1,
+    0,
+    null
+   ],
+   "realisasiAnggaran": 0.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-047",
+   "kode": "9.90.01.2.01.0048",
+   "pdId": "bappeda",
+   "nama": "[Dummy] Sub kegiatan pendukung: Pelaksanaan monitoring, evaluasi, dan penyusunan rekomendasi tindak la",
+   "indikatorOutput": "Jumlah laporan monitoring dan evaluasi percepatan hilirisasi",
+   "satuan": "Laporan",
+   "target": [
+    0,
+    0,
+    1.0,
+    1.0
+   ],
+   "pagu": 0,
+   "realisasi": [
+    0,
+    0,
+    0.8,
+    null
+   ],
+   "realisasiAnggaran": 0.0,
+   "dummy": true
+  },
+  {
+   "id": "tm-048",
+   "kode": "9.90.01.2.01.0049",
+   "pdId": "bappeda",
+   "nama": "[Dummy] Sub kegiatan pendukung: Penyusunan model, forum inovasi, atau pilot project percepatan hiliris",
+   "indikatorOutput": "Jumlah basis data/dashboard hilirisasi yang terbangun atau terbarui",
+   "satuan": "Sistem",
+   "target": [
+    0,
+    0,
+    1.0,
+    0
+   ],
+   "pagu": 0,
+   "realisasi": [
+    0,
+    0,
+    0.8,
+    null
+   ],
+   "realisasiAnggaran": 0.0,
+   "dummy": true
+  }
+ ],
+ "tag": [
+  {
+   "id": "tag001",
+   "jenis": "general",
+   "indikatorId": "G01",
+   "pdId": "biro-org",
+   "subkegiatanId": "biro-org-1",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag002",
+   "jenis": "general",
+   "indikatorId": "G02",
+   "pdId": "biro-org",
+   "subkegiatanId": "biro-org-1",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag003",
+   "jenis": "general",
+   "indikatorId": "G03",
+   "pdId": "biro-org",
+   "subkegiatanId": "biro-org-4",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-24"
+  },
+  {
+   "id": "tag004",
+   "jenis": "general",
+   "indikatorId": "G03",
+   "pdId": "biro-org",
+   "subkegiatanId": "biro-org-0",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "diajukan",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-22"
+  },
+  {
+   "id": "tag005",
+   "jenis": "general",
+   "indikatorId": "G04",
+   "pdId": "inspektorat",
+   "subkegiatanId": "inspektorat-1",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-24"
+  },
+  {
+   "id": "tag006",
+   "jenis": "general",
+   "indikatorId": "G04",
+   "pdId": "inspektorat",
+   "subkegiatanId": "inspektorat-0",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag007",
+   "jenis": "general",
+   "indikatorId": "G05",
+   "pdId": "inspektorat",
+   "subkegiatanId": "inspektorat-2",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag008",
+   "jenis": "general",
+   "indikatorId": "G06",
+   "pdId": "bappeda",
+   "subkegiatanId": "bappeda-1",
+   "bagian": "Perencanaan Kinerja",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag009",
+   "jenis": "general",
+   "indikatorId": "G06",
+   "pdId": "biro-org",
+   "subkegiatanId": "biro-org-3",
+   "bagian": "Pengukuran Kinerja",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag010",
+   "jenis": "general",
+   "indikatorId": "G06",
+   "pdId": "inspektorat",
+   "subkegiatanId": "inspektorat-3",
+   "bagian": "Evaluasi Akuntabilitas Kinerja Internal",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "diajukan",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-20"
+  },
+  {
+   "id": "tag011",
+   "jenis": "general",
+   "indikatorId": "G07",
+   "pdId": "bappeda",
+   "subkegiatanId": "bappeda-0",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-24"
+  },
+  {
+   "id": "tag012",
+   "jenis": "general",
+   "indikatorId": "G08",
+   "pdId": "diskominfo",
+   "subkegiatanId": "diskominfo-0",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-24"
+  },
+  {
+   "id": "tag013",
+   "jenis": "general",
+   "indikatorId": "G09",
+   "pdId": "dispersip",
+   "subkegiatanId": "dispersip-0",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag014",
+   "jenis": "general",
+   "indikatorId": "G09",
+   "pdId": "dispersip",
+   "subkegiatanId": "dispersip-1",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "diajukan",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-20"
+  },
+  {
+   "id": "tag015",
+   "jenis": "general",
+   "indikatorId": "G10",
+   "pdId": "diskominfo",
+   "subkegiatanId": "diskominfo-3",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag016",
+   "jenis": "general",
+   "indikatorId": "G11",
+   "pdId": "biro-hukum",
+   "subkegiatanId": "biro-hukum-1",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-24"
+  },
+  {
+   "id": "tag017",
+   "jenis": "general",
+   "indikatorId": "G12",
+   "pdId": "biro-hukum",
+   "subkegiatanId": "biro-hukum-0",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag018",
+   "jenis": "general",
+   "indikatorId": "G13",
+   "pdId": "diskominfo",
+   "subkegiatanId": "diskominfo-4",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "diajukan",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-22"
+  },
+  {
+   "id": "tag019",
+   "jenis": "general",
+   "indikatorId": "G14",
+   "pdId": "biro-pbj",
+   "subkegiatanId": "biro-pbj-0",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag020",
+   "jenis": "general",
+   "indikatorId": "G14",
+   "pdId": "biro-pbj",
+   "subkegiatanId": "biro-pbj-1",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag021",
+   "jenis": "general",
+   "indikatorId": "G15",
+   "pdId": "bkd",
+   "subkegiatanId": "bkd-2",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-20"
+  },
+  {
+   "id": "tag022",
+   "jenis": "general",
+   "indikatorId": "G15",
+   "pdId": "bkd",
+   "subkegiatanId": "bkd-0",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "diajukan",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-24"
+  },
+  {
+   "id": "tag023",
+   "jenis": "general",
+   "indikatorId": "G16",
+   "pdId": "biro-org",
+   "subkegiatanId": "biro-org-2",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag024",
+   "jenis": "general",
+   "indikatorId": "G17",
+   "pdId": "biro-org",
+   "subkegiatanId": "biro-org-2",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-24"
+  },
+  {
+   "id": "tag025",
+   "jenis": "general",
+   "indikatorId": "G18",
+   "pdId": "diskominfo",
+   "subkegiatanId": "diskominfo-0",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-20"
+  },
+  {
+   "id": "tag026",
+   "jenis": "general",
+   "indikatorId": "G18",
+   "pdId": "diskominfo",
+   "subkegiatanId": "diskominfo-1",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "diajukan",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-22"
+  },
+  {
+   "id": "tag027",
+   "jenis": "general",
+   "indikatorId": "G18",
+   "pdId": "diskominfo",
+   "subkegiatanId": "diskominfo-5",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "dikembalikan",
+   "catatan": "Kaitan dengan indikator perlu dijelaskan di narasi rencana aksi.",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag028",
+   "jenis": "general",
+   "indikatorId": "G19",
+   "pdId": "inspektorat",
+   "subkegiatanId": "inspektorat-4",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-22"
+  },
+  {
+   "id": "tag029",
+   "jenis": "general",
+   "indikatorId": "G20",
+   "pdId": "inspektorat",
+   "subkegiatanId": "inspektorat-4",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag030",
+   "jenis": "general",
+   "indikatorId": "G21",
+   "pdId": "biro-org",
+   "subkegiatanId": "biro-org-5",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-20"
+  },
+  {
+   "id": "tag031",
+   "jenis": "general",
+   "indikatorId": "G22",
+   "pdId": "inspektorat",
+   "subkegiatanId": "inspektorat-0",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "diajukan",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-20"
+  },
+  {
+   "id": "tag032",
+   "jenis": "general",
+   "indikatorId": "G23",
+   "pdId": "biro-org",
+   "subkegiatanId": "biro-org-6",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-20"
+  },
+  {
+   "id": "tag033",
+   "jenis": "general",
+   "indikatorId": "G24",
+   "pdId": "bappeda",
+   "subkegiatanId": "bappeda-2",
+   "bagian": "[Kelompok IKU makro 1]",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-26"
+  },
+  {
+   "id": "tag034",
+   "jenis": "general",
+   "indikatorId": "G27",
+   "pdId": "diskominfo",
+   "subkegiatanId": "diskominfo-1",
+   "bagian": "",
+   "narasi": "",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": null,
+   "fokus": null,
+   "diajukan": "2026-10-20"
+  },
+  {
+   "id": "tag035",
+   "jenis": "tematik",
+   "indikatorId": "T01",
+   "pdId": "bappeda",
+   "subkegiatanId": "tm-000",
+   "bagian": "",
+   "narasi": "1. Desk review dan pemetaan ulang sub kegiatan yang ter tagging\n2. Penguatan koordinasi lintas sektor",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm001",
+   "fokus": "Perencanaan dan Penganggaran",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 152975,
+    "rencana_aksi_output_id": 154721
+   }
+  },
+  {
+   "id": "tag036",
+   "jenis": "tematik",
+   "indikatorId": "T01",
+   "pdId": "bappeda",
+   "subkegiatanId": "tm-001",
+   "bagian": "",
+   "narasi": "Menyusun Standar Operasional Prosedur (SOP) perencanaan, pelaksanaan, evaluasi dan pelaporan penanggulangan kemiskinan",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm002",
+   "fokus": "Proses Bisnis dan SOP",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 164162,
+    "rencana_aksi_output_id": 166145
+   }
+  },
+  {
+   "id": "tag037",
+   "jenis": "tematik",
+   "indikatorId": "T01",
+   "pdId": "bappeda",
+   "subkegiatanId": "tm-002",
+   "bagian": "",
+   "narasi": "Melakukan bimtek terkait pemanfaatan DTSEN",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm003",
+   "fokus": "Sumber Daya Manusia",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 164237,
+    "rencana_aksi_output_id": 166221
+   }
+  },
+  {
+   "id": "tag038",
+   "jenis": "tematik",
+   "indikatorId": "T01",
+   "pdId": "bappeda",
+   "subkegiatanId": "tm-003",
+   "bagian": "",
+   "narasi": "Melakukan monitoring dan evaluasi pelaksanaan secara bertahap",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm004",
+   "fokus": "Pengawasan",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 164240,
+    "rencana_aksi_output_id": 166224
+   }
+  },
+  {
+   "id": "tag039",
+   "jenis": "tematik",
+   "indikatorId": "T01",
+   "pdId": "bappeda",
+   "subkegiatanId": "tm-004",
+   "bagian": "",
+   "narasi": "Melakukan koordinasi dengan instansi pengelola DTSEN untuk perluasan akses bagi OPD, disertai fasilitasi pemberian hak akses (user akses) serta pelaksanaan sosialisasi dan pelatihan penggunaan DTSEN kepada pengguna di daerah.",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm005",
+   "fokus": "Teknologi dan Informasi",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 164234,
+    "rencana_aksi_output_id": 166217
+   }
+  },
+  {
+   "id": "tag040",
+   "jenis": "tematik",
+   "indikatorId": "T02",
+   "pdId": "dpmptsp",
+   "subkegiatanId": "tm-005",
+   "bagian": "",
+   "narasi": "Melakukan asistensi dan koordinasi dengan OP terkait untuk penambahan anggaran Kegiatan Pengendalian Penanaman Modal pada APBD-P",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm006",
+   "fokus": "Perencanaan dan Penganggaran",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 164415,
+    "rencana_aksi_output_id": 166400
+   }
+  },
+  {
+   "id": "tag041",
+   "jenis": "tematik",
+   "indikatorId": "T02",
+   "pdId": "dpmptsp",
+   "subkegiatanId": "tm-006",
+   "bagian": "",
+   "narasi": "Melakukan audit SOP Eksisting dengan Memilah SOP mana yang masih relevan, mana yang bertentangan dengan OSS RBA, dan mana yang perlu dihapus (simplifikasi).",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm007",
+   "fokus": "Proses Bisnis dan SOP",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 164413,
+    "rencana_aksi_output_id": 166398
+   }
+  },
+  {
+   "id": "tag042",
+   "jenis": "tematik",
+   "indikatorId": "T02",
+   "pdId": "dpmptsp",
+   "subkegiatanId": "tm-007",
+   "bagian": "",
+   "narasi": "Mengusulkan pengangkatan JF PKPM pada Dinas PMPTSP melalui penyesuaian/inpassing",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm008",
+   "fokus": "Sumber Daya Manusia",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 164423,
+    "rencana_aksi_output_id": 166408
+   }
+  },
+  {
+   "id": "tag043",
+   "jenis": "tematik",
+   "indikatorId": "T02",
+   "pdId": "dpmptsp",
+   "subkegiatanId": "tm-008",
+   "bagian": "",
+   "narasi": "Melakukan pengawasan pelaksanaan penanaman modal dengan melibatkan DPMPTSP Kabupaten/Kota",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm009",
+   "fokus": "Pengawasan",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 164314,
+    "rencana_aksi_output_id": 166298
+   }
+  },
+  {
+   "id": "tag044",
+   "jenis": "tematik",
+   "indikatorId": "T02",
+   "pdId": "dpmptsp",
+   "subkegiatanId": "tm-009",
+   "bagian": "",
+   "narasi": "-Mengimplementasikan protokol pencadangan (backup) yang menyimpan salinan data kedalam 2 media berbeda (server dan hardisk)\n \n- Memastikan seluruh komputer petugas pelayanan dilengkapi dengan antivirus dan firewall",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm010",
+   "fokus": "Teknologi dan Informasi",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 164428,
+    "rencana_aksi_output_id": 166413
+   }
+  },
+  {
+   "id": "tag045",
+   "jenis": "tematik",
+   "indikatorId": "T02",
+   "pdId": "dpmptsp",
+   "subkegiatanId": "tm-010",
+   "bagian": "",
+   "narasi": "Mengembangkan aplikasi BEKANTAN (Berinvestasi di Kalimantan Selatan) yang berbasis geospasial yang dapat menunjukkan lokasi potensi investasi tanpa investor harus datang langsung ke lokasi",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm011",
+   "fokus": "Inovasi",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 164419,
+    "rencana_aksi_output_id": 166404
+   }
+  },
+  {
+   "id": "tag046",
+   "jenis": "tematik",
+   "indikatorId": "T06",
+   "pdId": "disdikbud",
+   "subkegiatanId": "tm-011",
+   "bagian": "",
+   "narasi": "Penyusunan dan penyempurnaan SOP layanan pendidikan",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm012",
+   "fokus": "Proses Bisnis dan SOP",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 193402,
+    "rencana_aksi_output_id": 196386
+   }
+  },
+  {
+   "id": "tag047",
+   "jenis": "tematik",
+   "indikatorId": "T06",
+   "pdId": "disdikbud",
+   "subkegiatanId": "tm-012",
+   "bagian": "",
+   "narasi": "Pelatihan dan pengembangan kompetensi guru dan tenaga kependidikan",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm013",
+   "fokus": "Sumber Daya Manusia",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 193389,
+    "rencana_aksi_output_id": 196373
+   }
+  },
+  {
+   "id": "tag048",
+   "jenis": "tematik",
+   "indikatorId": "T07",
+   "pdId": "disdikbud",
+   "subkegiatanId": "tm-014",
+   "bagian": "",
+   "narasi": "Pengembangan program inovasi pendidikan daerah",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm014",
+   "fokus": "Inovasi",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 193364,
+    "rencana_aksi_output_id": 196346
+   }
+  },
+  {
+   "id": "tag049",
+   "jenis": "tematik",
+   "indikatorId": "T07",
+   "pdId": "disdikbud",
+   "subkegiatanId": "tm-015",
+   "bagian": "",
+   "narasi": "Pengembangan sistem informasi pendidikan daerah",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm015",
+   "fokus": "Teknologi dan Informasi",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 193371,
+    "rencana_aksi_output_id": 196355
+   }
+  },
+  {
+   "id": "tag050",
+   "jenis": "tematik",
+   "indikatorId": "T07",
+   "pdId": "disdikbud",
+   "subkegiatanId": "tm-016",
+   "bagian": "",
+   "narasi": "Penguatan perencanaan berbasis data melalui integrasi data pendidikan daerah",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm016",
+   "fokus": "Perencanaan dan Penganggaran",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 193383,
+    "rencana_aksi_output_id": 196367
+   }
+  },
+  {
+   "id": "tag051",
+   "jenis": "tematik",
+   "indikatorId": "T04",
+   "pdId": "dinkes",
+   "subkegiatanId": "tm-017",
+   "bagian": "",
+   "narasi": "1. Rapat koordinasi perencanaan provinsi dan kab/kota;\n2. Rapat koordinasi penyusunan dokumen perencanaan bidang kesehatan",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm017",
+   "fokus": "Perencanaan dan Penganggaran",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 165549,
+    "rencana_aksi_output_id": 167569
+   }
+  },
+  {
+   "id": "tag052",
+   "jenis": "tematik",
+   "indikatorId": "T04",
+   "pdId": "dinkes",
+   "subkegiatanId": "tm-018",
+   "bagian": "",
+   "narasi": "1. Monev SISRUTE pada Fasyankes;\n2. Diseminasi Hasil Analisis Indikator Nasional Mutu (INM) dan Insiden Keselamatan Pasien (IKP) Pada Rumah Sakit dan Puskesmas",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm018",
+   "fokus": "Proses Bisnis dan SOP",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 165317,
+    "rencana_aksi_output_id": 167332
+   }
+  },
+  {
+   "id": "tag053",
+   "jenis": "tematik",
+   "indikatorId": "T04",
+   "pdId": "dinkes",
+   "subkegiatanId": "tm-019",
+   "bagian": "",
+   "narasi": "1. Pemenuhan Tenaga Kesehatan di Fasilitas Layanan Kesehatan;\n2. Peningkatan kompetensi bagi tenaga kesehatan",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm019",
+   "fokus": "Sumber Daya Manusia",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 165473,
+    "rencana_aksi_output_id": 167491
+   }
+  },
+  {
+   "id": "tag054",
+   "jenis": "tematik",
+   "indikatorId": "T04",
+   "pdId": "dinkes",
+   "subkegiatanId": "tm-020",
+   "bagian": "",
+   "narasi": "Evaluasi kinerja urusan bidang kesehatan",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm020",
+   "fokus": "Pengawasan",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 165474,
+    "rencana_aksi_output_id": 167492
+   }
+  },
+  {
+   "id": "tag055",
+   "jenis": "tematik",
+   "indikatorId": "T04",
+   "pdId": "dinkes",
+   "subkegiatanId": "tm-021",
+   "bagian": "",
+   "narasi": "Monev pelaksanaan SPM dan Satu Sehat",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm021",
+   "fokus": "Teknologi dan Informasi",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 165319,
+    "rencana_aksi_output_id": 167334
+   }
+  },
+  {
+   "id": "tag056",
+   "jenis": "tematik",
+   "indikatorId": "T04",
+   "pdId": "dinkes",
+   "subkegiatanId": "tm-022",
+   "bagian": "",
+   "narasi": "Workshop optimalisasi pemanfaatan telemidicine",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm022",
+   "fokus": "Inovasi",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 165315,
+    "rencana_aksi_output_id": 167330
+   }
+  },
+  {
+   "id": "tag057",
+   "jenis": "tematik",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "subkegiatanId": "tm-023",
+   "bagian": "",
+   "narasi": "Mengoptimalkan lahan untuk ditanam 2-3kali setahun.",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm023",
+   "fokus": "Perencanaan dan Penganggaran",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 165867,
+    "rencana_aksi_output_id": 167888
+   }
+  },
+  {
+   "id": "tag058",
+   "jenis": "tematik",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "subkegiatanId": "tm-024",
+   "bagian": "",
+   "narasi": "Mengoptimalkan lahan untuk di tanam 2-3 kali setahun",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm023",
+   "fokus": "Perencanaan dan Penganggaran",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 165998,
+    "rencana_aksi_output_id": 168019
+   }
+  },
+  {
+   "id": "tag059",
+   "jenis": "tematik",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "subkegiatanId": "tm-025",
+   "bagian": "",
+   "narasi": "Mitigasi Risiko dan Perlindungan Petani (Pre-Bencana), Penanganan Saat Bencana (Respon Cepat), Pemulihan Pasca Bencana (Post-Bencana)",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm024",
+   "fokus": "Perencanaan dan Penganggaran",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 166026,
+    "rencana_aksi_output_id": 168047
+   }
+  },
+  {
+   "id": "tag060",
+   "jenis": "tematik",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "subkegiatanId": "tm-026",
+   "bagian": "",
+   "narasi": "Menyusun Standar Operasional Prosedur (SOP) Kegiatan Hilirisasi",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm025",
+   "fokus": "Proses Bisnis dan SOP",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 165852,
+    "rencana_aksi_output_id": 167873
+   }
+  },
+  {
+   "id": "tag061",
+   "jenis": "tematik",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "subkegiatanId": "tm-027",
+   "bagian": "",
+   "narasi": "Bantuan sarana pertanian kepada kelompok tani",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm026",
+   "fokus": "Sumber Daya Manusia",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 166018,
+    "rencana_aksi_output_id": 168039
+   }
+  },
+  {
+   "id": "tag062",
+   "jenis": "tematik",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "subkegiatanId": "tm-028",
+   "bagian": "",
+   "narasi": "Melaksanakan Evaluasi kinerja",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm027",
+   "fokus": "Pengawasan",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 166009,
+    "rencana_aksi_output_id": 168030
+   }
+  },
+  {
+   "id": "tag063",
+   "jenis": "tematik",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "subkegiatanId": "tm-029",
+   "bagian": "",
+   "narasi": "Memberikan bantuan Sarana Produksi Pertanian (Saprodi) kepada petani yang memiliki lahan rawa.",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm028",
+   "fokus": "Inovasi",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 165864,
+    "rencana_aksi_output_id": 167885
+   }
+  },
+  {
+   "id": "tag064",
+   "jenis": "tematik",
+   "indikatorId": "T03",
+   "pdId": "disperin",
+   "subkegiatanId": "tm-038",
+   "bagian": "",
+   "narasi": "Melaksanakan Rapat koordinasi perencanaan provinsi dan kab/kota;",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm029",
+   "fokus": "Perencanaan dan Penganggaran",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 194899,
+    "rencana_aksi_output_id": 197906
+   }
+  },
+  {
+   "id": "tag065",
+   "jenis": "tematik",
+   "indikatorId": "T03",
+   "pdId": "disperin",
+   "subkegiatanId": "tm-039",
+   "bagian": "",
+   "narasi": "Menyusun Standar Operasional Prosedur (SOP) Kegiatan Hilirisasi",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm030",
+   "fokus": "Proses Bisnis dan SOP",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 194896,
+    "rencana_aksi_output_id": 197903
+   }
+  },
+  {
+   "id": "tag066",
+   "jenis": "tematik",
+   "indikatorId": "T03",
+   "pdId": "disperin",
+   "subkegiatanId": "tm-040",
+   "bagian": "",
+   "narasi": "Penumbuhan Wira Usaha Baru Industri Pangan Se Kalimantan Selatan",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm031",
+   "fokus": "Sumber Daya Manusia",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 194901,
+    "rencana_aksi_output_id": 197908
+   }
+  },
+  {
+   "id": "tag067",
+   "jenis": "tematik",
+   "indikatorId": "T03",
+   "pdId": "disperin",
+   "subkegiatanId": "tm-041",
+   "bagian": "",
+   "narasi": "Pelatihan Diversifikasi Produk Olahan Hasil Sumber Daya Alam Perikanan Se Kalsel",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm032",
+   "fokus": "Sumber Daya Manusia",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 194902,
+    "rencana_aksi_output_id": 197909
+   }
+  },
+  {
+   "id": "tag068",
+   "jenis": "tematik",
+   "indikatorId": "T03",
+   "pdId": "disperin",
+   "subkegiatanId": "tm-042",
+   "bagian": "",
+   "narasi": "- Fasilitasi SNI\n- Fasilitasi Sertifikasi Halal",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm033",
+   "fokus": "Pengawasan",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 194900,
+    "rencana_aksi_output_id": 197907
+   }
+  },
+  {
+   "id": "tag069",
+   "jenis": "tematik",
+   "indikatorId": "T03",
+   "pdId": "disperin",
+   "subkegiatanId": "tm-043",
+   "bagian": "",
+   "narasi": "Mengembangkan Sistem Informasi Pendaftaran Pelatihan Industri (SIMANIS)",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm034",
+   "fokus": "Teknologi dan Informasi",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 194898,
+    "rencana_aksi_output_id": 197905
+   }
+  },
+  {
+   "id": "tag070",
+   "jenis": "tematik",
+   "indikatorId": "T03",
+   "pdId": "bappeda",
+   "subkegiatanId": "tm-044",
+   "bagian": "",
+   "narasi": "Penyusunan dan sinkronisasi rencana aksi/roadmap hilirisasi ke dalam dokumen perencanaan dan penganggaran lintas perangkat daerah.",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm035",
+   "fokus": "Perencanaan dan Penganggaran",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 194911,
+    "rencana_aksi_output_id": 197918
+   }
+  },
+  {
+   "id": "tag071",
+   "jenis": "tematik",
+   "indikatorId": "T03",
+   "pdId": "bappeda",
+   "subkegiatanId": "tm-045",
+   "bagian": "",
+   "narasi": "Jumlah SOP/proses bisnis percepatan hilirisasi",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm036",
+   "fokus": "Proses Bisnis dan SOP",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 194913,
+    "rencana_aksi_output_id": 197920
+   }
+  },
+  {
+   "id": "tag072",
+   "jenis": "tematik",
+   "indikatorId": "T03",
+   "pdId": "bappeda",
+   "subkegiatanId": "tm-046",
+   "bagian": "",
+   "narasi": "Pelaksanaan desk, bimbingan teknis, atau penguatan kapasitas aparatur terkait perencanaan dan penganggaran percepatan hilirisasi.",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm037",
+   "fokus": "Sumber Daya Manusia",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 194914,
+    "rencana_aksi_output_id": 197921
+   }
+  },
+  {
+   "id": "tag073",
+   "jenis": "tematik",
+   "indikatorId": "T03",
+   "pdId": "bappeda",
+   "subkegiatanId": "tm-047",
+   "bagian": "",
+   "narasi": "Pelaksanaan monitoring, evaluasi, dan penyusunan rekomendasi tindak lanjut program percepatan hilirisasi lintas sektor.",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm038",
+   "fokus": "Pengawasan",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 194916,
+    "rencana_aksi_output_id": 197923
+   }
+  },
+  {
+   "id": "tag074",
+   "jenis": "tematik",
+   "indikatorId": "T03",
+   "pdId": "bappeda",
+   "subkegiatanId": "tm-048",
+   "bagian": "",
+   "narasi": "Penyusunan model, forum inovasi, atau pilot project percepatan hilirisasi berbasis komoditas unggulan dan konektivitas logistik.",
+   "anggaranMode": "pagu",
+   "anggaranManual": null,
+   "status": "disetujui",
+   "catatan": "",
+   "permasalahanId": "pm039",
+   "fokus": "Teknologi dan Informasi",
+   "diajukan": "2026-10-15",
+   "portalId": {
+    "rencana_aksi_id": 194917,
+    "rencana_aksi_output_id": 197924
+   }
+  }
+ ],
+ "permasalahan": [
+  {
+   "id": "pm001",
+   "indikatorId": "T01",
+   "pdId": "bappeda",
+   "permasalahan": "Bahwa dalam proses perencanaan dan penganggaran di daerah, program dan sub kegiatan telah ditetapkan (ter-tagging) oleh Kementerian Dalam Negeri. Namun demikian, pada implementasinya di tingkat daerah, subkegiatan yang telah ter-tagging tersebut secara riil dalam aspek perencanaan dan penganggaran belum secara langsung menyasar kelompok masyarakat miskin, sehingga efektivitas intervensi penanggulangan kemiskinan menjadi kurang optimal.",
+   "sasaran": "Meningkatnya sub kegiatan yang secara langsung menyasar kemiskinan",
+   "indikator": "Persentase sub kegiatan langsung terhadap total tagging kemiskinan",
+   "target": 25.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 53269,
+    "indikator_permasalahan_id": 60826
+   }
+  },
+  {
+   "id": "pm002",
+   "indikatorId": "T01",
+   "pdId": "bappeda",
+   "permasalahan": "Bahwa dalam proses perencanaan dan penganggaran di daerah, program dan sub kegiatan telah ditetapkan (ter-tagging) oleh Kementerian Dalam Negeri. Namun demikian, pada implementasinya di tingkat daerah, subkegiatan yang telah ter-tagging",
+   "sasaran": "Meningkatnya kepatuhan pelaksanaan kegiatan terhadap RAT yang telah ditetapkan, sehingga seluruh proses pelaksanaan kegiatan berjalan sesuai ketentuan, lebih terarah, konsisten, dan mampu mendukung efektivitas pencapaian tujuan penanggulangan kemiskinan",
+   "indikator": "Jumlah evaluasi RAT yang dilaksanakan",
+   "target": 2.0,
+   "satuan": "Dokumen",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57170,
+    "indikator_permasalahan_id": 64916
+   }
+  },
+  {
+   "id": "pm003",
+   "indikatorId": "T01",
+   "pdId": "bappeda",
+   "permasalahan": "Pemahaman aparatur terhadap konsep penanggulangan kemiskinan (berbasis data, by name by address, intervensi tepat sasaran) masih bervariasi.",
+   "sasaran": "Meningkatnya pemahaman dan kapasitas SDM dalam penanggulangan kemiskinan berbasis data dan tepat sasaran",
+   "indikator": "Jumlah kabupaten/kota yang SDMnya memahami konsep penanggulangan kemiskinan berbasis data",
+   "target": 13.0,
+   "satuan": "Kabupaten/Kota",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57171,
+    "indikator_permasalahan_id": 64935
+   }
+  },
+  {
+   "id": "pm004",
+   "indikatorId": "T01",
+   "pdId": "bappeda",
+   "permasalahan": "Pengawasan penanggulangan kemiskinan masih bersifat sampling dan belum mencakup seluruh aktivitas subkegiatan",
+   "sasaran": "Meningkatnya cakupan pengawasan seluruh subkegiatan penanggulangan kemiskinan",
+   "indikator": "Persentase subkegiatan yang diawasi secara menyeluruh (%)",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57173,
+    "indikator_permasalahan_id": 64953
+   }
+  },
+  {
+   "id": "pm005",
+   "indikatorId": "T01",
+   "pdId": "bappeda",
+   "permasalahan": "Akses terhadap sistem informasi DTSEN belum tersedia secara merata bagi seluruh perangkat daerah/pemangku kepentingan, sehingga pemanfaatan data DTSEN dalam perencanaan, penganggaran, dan pelaksanaan program penanggulangan kemiskinan belum optimal",
+   "sasaran": "Meningkatnya aksesibilitas dan pemanfaatan data DTSEN oleh seluruh perangkat daerah dalam mendukung penanggulangan kemiskinan yang berbasis data",
+   "indikator": "Jumlah OPD ter tagging penanggulangan kemiskinan yang memiliki akses terhadap aplikasi DTSEN",
+   "target": 6.0,
+   "satuan": "Perangkat Daerah",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57174,
+    "indikator_permasalahan_id": 64937
+   }
+  },
+  {
+   "id": "pm006",
+   "indikatorId": "T02",
+   "pdId": "dpmptsp",
+   "permasalahan": "Keterbatasan anggaran pada Kegiatan Pengendalian Penanaman Modal untuk pemantauan realisasi investasi di Kalimantan Selatan",
+   "sasaran": "Meningkatnya jumlah anggaran pada Kegiatan Pengendalian Penanaman Modal",
+   "indikator": "Jumlah alokasi anggaran pada Kegiatan Pengendalian Penanaman Modal",
+   "target": 300.0,
+   "satuan": "Juta",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57239,
+    "indikator_permasalahan_id": 64987
+   }
+  },
+  {
+   "id": "pm007",
+   "indikatorId": "T02",
+   "pdId": "dpmptsp",
+   "permasalahan": "Ketidaksiapan Standar Operasioanal Prosedur (SOP) terhadap Dinamika Aturan Pusat (OSS RBA) dimana Perubahan regulasi di tingkat pusat (seperti pembaruan pada sistem OSS RBA) sering kali tidak langsung diikuti dengan revisi SOP di tingkat daerah",
+   "sasaran": "Meningkatnya keselarasan standar operasional prosedur daerah dengan regulasi penanaman modal berbasis risiko (OSS RBA) tingkat pusat",
+   "indikator": "Persentase SOP Pelayanan Perizinan dan Non-Perizinan yang telah tersinkronisasi dengan PP Nomor 28 Tahun 2025 tentang Penyelenggaraan Perizinan Berusaha Berbasis Risiko dan sistem OSS RBA.",
+   "target": 80.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57241,
+    "indikator_permasalahan_id": 64986
+   }
+  },
+  {
+   "id": "pm008",
+   "indikatorId": "T02",
+   "pdId": "dpmptsp",
+   "permasalahan": "Belum tersedianya Pejabat Fungsional Penata Kelola Penanam Modal (PKPM) pada Dinas PMPTSP yang mengakibatkan lemahnya pengawasan dan pengendalian investasi, serta penurunan kualitas data penanaman modal",
+   "sasaran": "Tersedianya aparatur Fungsional Penata Kelola Penanam Modal (PKPM) yang profesional, adaptif, dan berorientasi pada pelayanan",
+   "indikator": "Jumlah Aparatur JF PKPM yang tersedia",
+   "target": 5.0,
+   "satuan": "Orang",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57242,
+    "indikator_permasalahan_id": 64980
+   }
+  },
+  {
+   "id": "pm009",
+   "indikatorId": "T02",
+   "pdId": "dpmptsp",
+   "permasalahan": "Pelaporan kegiatan penanaman modal dari pelaku usaha yang belum optimal",
+   "sasaran": "Meningkatkan pengawasan pelaksanaan Penanaman Modal",
+   "indikator": "Jumlah pelaku usaha yang di dibina",
+   "target": 350.0,
+   "satuan": "Pelaku Usaha",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57244,
+    "indikator_permasalahan_id": 64984
+   }
+  },
+  {
+   "id": "pm010",
+   "indikatorId": "T02",
+   "pdId": "dpmptsp",
+   "permasalahan": "Belum adanya sistem proteksi yang kuat terhadap data sensitif investor serta minimnya protokol backup data yang teruji jika terjadi serangan siber atau kegagalan sistem.",
+   "sasaran": "Terjaminnya kerahasiaan, keutuhan, dan ketersediaan data investasi melalui sistem proteksi berlapis",
+   "indikator": "Frekuensi keberhasilan pemulihan data dari sistem cadangan (Recovery Success Rate) 100%",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57246,
+    "indikator_permasalahan_id": 64973
+   }
+  },
+  {
+   "id": "pm011",
+   "indikatorId": "T02",
+   "pdId": "dpmptsp",
+   "permasalahan": "Data investasi yang melimpan, namun belum diolah secara inovatif menjadi informasi strategis untuk menarik investor.",
+   "sasaran": "Terwujudnya suatu ekosistem digital yang dapat menyajikan data-data potensi investasi di Kalimantan Selatan, yang berdampak langsung pada peningkatan realisasi investasi.",
+   "indikator": "Jumlah inovasi yang terimplementasi secara berkelanjutan",
+   "target": 1.0,
+   "satuan": "Inovasi",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57247,
+    "indikator_permasalahan_id": 64983
+   }
+  },
+  {
+   "id": "pm012",
+   "indikatorId": "T06",
+   "pdId": "disdikbud",
+   "permasalahan": "SOP layanan pendidikan belum terstandar dan belum terdigitalisasi",
+   "sasaran": "Standarisasi proses bisnis layanan pendidikan",
+   "indikator": "Persentase layanan memiliki SOP",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57310,
+    "indikator_permasalahan_id": 71216
+   }
+  },
+  {
+   "id": "pm013",
+   "indikatorId": "T06",
+   "pdId": "disdikbud",
+   "permasalahan": "Kompetensi tenaga pendidik dan tenaga kependidikan belum merata",
+   "sasaran": "Peningkatan kompetensi SDM pendidikan",
+   "indikator": "Persentase guru mengikuti pelatihan peningkatan kompetensi",
+   "target": 80.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57313,
+    "indikator_permasalahan_id": 71211
+   }
+  },
+  {
+   "id": "pm014",
+   "indikatorId": "T07",
+   "pdId": "disdikbud",
+   "permasalahan": "Inovasi layanan pendidikan belum berkembang secara optimal",
+   "sasaran": "Peningkatan inovasi pelayanan pendidikan",
+   "indikator": "Jumlah inovasi layanan pendidikan",
+   "target": 1.0,
+   "satuan": "Inovasi",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 62886,
+    "indikator_permasalahan_id": 71201
+   }
+  },
+  {
+   "id": "pm015",
+   "indikatorId": "T07",
+   "pdId": "disdikbud",
+   "permasalahan": "Pemanfaatan teknologi informasi dalam layanan pendidikan masih terbatas",
+   "sasaran": "Digitalisasi layanan pendidikan",
+   "indikator": "Persentase layanan pendidikan berbasis digital",
+   "target": 85.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 62889,
+    "indikator_permasalahan_id": 71203
+   }
+  },
+  {
+   "id": "pm016",
+   "indikatorId": "T07",
+   "pdId": "disdikbud",
+   "permasalahan": "Perencanaan program pendidikan belum sepenuhnya berbasis data kebutuhan sekolah dan wilayah",
+   "sasaran": "Perencanaan pendidikan berbasis data",
+   "indikator": "Persentase program berbasis data pendidikan",
+   "target": 90.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 62893,
+    "indikator_permasalahan_id": 71206
+   }
+  },
+  {
+   "id": "pm017",
+   "indikatorId": "T04",
+   "pdId": "dinkes",
+   "permasalahan": "Sinkronisasi perencanaan program kab/kota belum optimal",
+   "sasaran": "Meningkatnya kualitas perencanaan program kesehatan",
+   "indikator": "Dokumen Laporan Kinerja Dinas Kesehatan",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57342,
+    "indikator_permasalahan_id": 65330
+   }
+  },
+  {
+   "id": "pm018",
+   "indikatorId": "T04",
+   "pdId": "dinkes",
+   "permasalahan": "Alur rujukan layanan kesehatan belum efektif",
+   "sasaran": "Meningkatnya Kapasitas dan Standarisasi Pelayanan Kesehatan Rujukan",
+   "indikator": "Persentase Respon Time SISRUTE Rumah Sakit",
+   "target": 14.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57343,
+    "indikator_permasalahan_id": 65310
+   }
+  },
+  {
+   "id": "pm019",
+   "indikatorId": "T04",
+   "pdId": "dinkes",
+   "permasalahan": "Distribusi tenaga kesehatan belum merata, dan Kompetensi tenaga kesehatan di daerah terpencil masih terbatas",
+   "sasaran": "Meningkatnya Pemenuhan, Pemerataan dan Kualitas SDM Kesehatan",
+   "indikator": "Persentase Fasyankes dengan SDMK sesuai Standart",
+   "target": 86.5,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57344,
+    "indikator_permasalahan_id": 65327
+   }
+  },
+  {
+   "id": "pm020",
+   "indikatorId": "T04",
+   "pdId": "dinkes",
+   "permasalahan": "Monitoring dan evaluasi program belum optimal",
+   "sasaran": "Meningkatnya mutu layanan kesehatan",
+   "indikator": "Dokumen Laporan Kinerja Dinas Kesehatan",
+   "target": 1.0,
+   "satuan": "Dokumen",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57367,
+    "indikator_permasalahan_id": 65328
+   }
+  },
+  {
+   "id": "pm021",
+   "indikatorId": "T04",
+   "pdId": "dinkes",
+   "permasalahan": "Belum optimalnya sistem informasi kesehatan yang terintegrasi",
+   "sasaran": "Terintegrasinya sistem informasi kesehatan",
+   "indikator": "Persentase sistem informasi kesehatan yang terintegrasi",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57368,
+    "indikator_permasalahan_id": 65325
+   }
+  },
+  {
+   "id": "pm022",
+   "indikatorId": "T04",
+   "pdId": "dinkes",
+   "permasalahan": "Akses layanan di daerah sulit terbatas",
+   "sasaran": "Meningkatnya akses dan layanan kesehatan di daerah",
+   "indikator": "Jumlah Fasilitas Pelayanan Kesehatan (Fasyankes) yang Melayani Konsultasi Jarak Jauh Antar Fasyankes Melalui Pelayanan Telemedicine untuk Mendapatkan Akses Pelayanan Kesehatan yang Berkualitas",
+   "target": 6.0,
+   "satuan": "Unit",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57369,
+    "indikator_permasalahan_id": 65308
+   }
+  },
+  {
+   "id": "pm023",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "permasalahan": "Masih rendahnya Produktivitas padi  di Kalimantan Selatan",
+   "sasaran": "Meningkatnya Luas panen dan produksi tanaman pangan",
+   "indikator": "Peningkatan luas panen padi",
+   "target": 3.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57678,
+    "indikator_permasalahan_id": 65543
+   }
+  },
+  {
+   "id": "pm024",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "permasalahan": "Seringnya terjadi DPI, Kebakaran Lahan dan Bencana Alam Tanaman Pangan",
+   "sasaran": "Meningkatnya Pengamanan Produksi Tanaman Pangan dari DPI, Bencana Kebakaran dan Bencana Alam",
+   "indikator": "Persentase Tanaan Pangan yang aman dari DPI, Kebakaran Lahan dan Bencana Alam",
+   "target": 97.5,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57703,
+    "indikator_permasalahan_id": 65550
+   }
+  },
+  {
+   "id": "pm025",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "permasalahan": "Belum adanya Standar Operasional (SOP)",
+   "sasaran": "Menyusun Standar Operasional Prosedur (SOP)",
+   "indikator": "Persentase Pemenuhan Standar Operasional Prosedur (SOP)",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57704,
+    "indikator_permasalahan_id": 65538
+   }
+  },
+  {
+   "id": "pm026",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "permasalahan": "Rendahnya minat masyarakat, khususnya generasi muda di sektor pertanian",
+   "sasaran": "Meningkatnya minat dan partisipasi masyarakat, khususnya generasi muda di sektor pertanian.",
+   "indikator": "Persentase peningkatan minat dan partisipasi masyarakat dalam sektor pertanian",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57706,
+    "indikator_permasalahan_id": 65548
+   }
+  },
+  {
+   "id": "pm027",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "permasalahan": "Monitoring dan evaluasi program belum optimal",
+   "sasaran": "Meningkatnya efektivitas monitoring dan evaluasi program.",
+   "indikator": "Dokumen Laporan Kinerja Dinas",
+   "target": 1.0,
+   "satuan": "Dokumen",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57707,
+    "indikator_permasalahan_id": 65546
+   }
+  },
+  {
+   "id": "pm028",
+   "indikatorId": "T05",
+   "pdId": "distanpangan",
+   "permasalahan": "Belum optimalnya pemanfaatan dan pengelolaan lahan rawa dalam rangka meningkatkan produktivitas dan produksi Tanaman Pangan",
+   "sasaran": "Meningkatnya optimalisasi pemanfaatan dan pengelolaan lahan rawa untuk mendukung peningkatan produksi dan produktivitas Tanaman Pangan.",
+   "indikator": "Pemanfaatan Padi Apung",
+   "target": 2.0,
+   "satuan": "Dokumen",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 57709,
+    "indikator_permasalahan_id": 65539
+   }
+  },
+  {
+   "id": "pm029",
+   "indikatorId": "T03",
+   "pdId": "disperin",
+   "permasalahan": "Belum optimalnya koordinasi antara pemerintah pusat, provinsi dan kabupaten/kota",
+   "sasaran": "Menyelaraskan kebijakan pembangunan industri antara pemerintah pusat, provinsi dan kabupaten/kota",
+   "indikator": "Persentase Pemenuhan Dokumen Perencanaan",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 66063,
+    "indikator_permasalahan_id": 77422
+   }
+  },
+  {
+   "id": "pm030",
+   "indikatorId": "T03",
+   "pdId": "disperin",
+   "permasalahan": "Belum adanya Standar Operasional (SOP) Prosedur Kegiatan Hilirisasi",
+   "sasaran": "Menyusun Standar Operasional Prosedur (SOP) Kegiatan Hilirisasi",
+   "indikator": "Persentase Pemenuhan Standar Operasional Prosedur (SOP)",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 66569,
+    "indikator_permasalahan_id": 77418
+   }
+  },
+  {
+   "id": "pm031",
+   "indikatorId": "T03",
+   "pdId": "disperin",
+   "permasalahan": "Produk pangan lokal masih dijual dalam bentuk mentah",
+   "sasaran": "Jumlah unit industri pangan baru",
+   "indikator": "Jumlah unit industri pengolahan pangan",
+   "target": 26.0,
+   "satuan": "Unit",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 66578,
+    "indikator_permasalahan_id": 77561
+   }
+  },
+  {
+   "id": "pm032",
+   "indikatorId": "T03",
+   "pdId": "disperin",
+   "permasalahan": "Produk perikanan dijual segar tanpa olahan",
+   "sasaran": "Meningkatkan industri pengolahan ikan",
+   "indikator": "Jumlah unit industri pengolahan ikan",
+   "target": 27.0,
+   "satuan": "Unit",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 66602,
+    "indikator_permasalahan_id": 77562
+   }
+  },
+  {
+   "id": "pm033",
+   "indikatorId": "T03",
+   "pdId": "disperin",
+   "permasalahan": "Mutu dan keamanan pangan & ikan belum standar",
+   "sasaran": "Peningkatan sertifikasi halal, BPOM, SNI",
+   "indikator": "Jumlah produk bersertifikat",
+   "target": 101.0,
+   "satuan": "Unit",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 66605,
+    "indikator_permasalahan_id": 77560
+   }
+  },
+  {
+   "id": "pm034",
+   "indikatorId": "T03",
+   "pdId": "disperin",
+   "permasalahan": "Belum optimalnya akses informasi dan proses pendaftaran pelatihan peningkatan kompetensi kerja",
+   "sasaran": "Tersedianya akses informasi dan proses pendaftaran pelatihan peningkatan kompetensi kerja secara online",
+   "indikator": "Persentase ketersediaan data informasi dan proses pendaftaran pelatihan peningkatan kompetensi kerja secara online",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 66606,
+    "indikator_permasalahan_id": 77420
+   }
+  },
+  {
+   "id": "pm035",
+   "indikatorId": "T03",
+   "pdId": "bappeda",
+   "permasalahan": "Perencanaan dan penganggaran percepatan hilirisasi lintas sektor belum sepenuhnya terintegrasi berbasis rantai nilai, kebutuhan industri pengolahan, konektivitas logistik, dan prioritas pembangunan daerah.",
+   "sasaran": "Terintegrasinya dokumen perencanaan dan penganggaran daerah yang mendukung percepatan hilirisasi komoditas unggulan.",
+   "indikator": "Persentase dokumen perencanaan dan penganggaran yang memuat program prioritas hilirisasi sesuai ketentuan",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 66749,
+    "indikator_permasalahan_id": 77576
+   }
+  },
+  {
+   "id": "pm036",
+   "indikatorId": "T03",
+   "pdId": "bappeda",
+   "permasalahan": "Proses bisnis koordinasi dan fasilitasi percepatan hilirisasi antarsektor belum terdokumentasi secara lengkap dalam SOP yang terintegrasi.",
+   "sasaran": "Tersusunnya proses bisnis dan SOP koordinasi percepatan hilirisasi lintas perangkat daerah.",
+   "indikator": "Persentase pemenuhan SOP/proses bisnis percepatan hilirisasi yang sesuai ketentuan",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 66750,
+    "indikator_permasalahan_id": 77577
+   }
+  },
+  {
+   "id": "pm037",
+   "indikatorId": "T03",
+   "pdId": "bappeda",
+   "permasalahan": "Kapasitas aparatur dalam analisis rantai nilai, perencanaan proyek hilirisasi, penganggaran berbasis hasil, dan kolaborasi lintas sektor masih perlu ditingkatkan.",
+   "sasaran": "Meningkatnya kapasitas aparatur Bappeda dan perangkat daerah terkait dalam perencanaan percepatan hilirisasi.",
+   "indikator": "Persentase aparatur yang meningkat kompetensinya dalam perencanaan hilirisasi",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 66751,
+    "indikator_permasalahan_id": 77578
+   }
+  },
+  {
+   "id": "pm038",
+   "indikatorId": "T03",
+   "pdId": "bappeda",
+   "permasalahan": "Monitoring dan evaluasi program hilirisasi lintas perangkat daerah belum terintegrasi, berkala, dan berbasis indikator kinerja.",
+   "sasaran": "Terselenggaranya pengendalian, monitoring, dan evaluasi program percepatan hilirisasi secara terukur.",
+   "indikator": "Persentase pelaksanaan monitoring dan evaluasi program hilirisasi sesuai rencana",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 66752,
+    "indikator_permasalahan_id": 77579
+   }
+  },
+  {
+   "id": "pm039",
+   "indikatorId": "T03",
+   "pdId": "bappeda",
+   "permasalahan": "Data dan informasi hilirisasi komoditas unggulan belum terintegrasi dalam satu basis data/dashboard yang mendukung perencanaan dan pengambilan keputusan.",
+   "sasaran": "Tersedianya data dan informasi hilirisasi yang terintegrasi dan mudah diakses untuk mendukung perencanaan pembangunan.",
+   "indikator": "Persentase ketersediaan data/informasi hilirisasi yang terintegrasi",
+   "target": 100.0,
+   "satuan": "Persentase",
+   "realisasi": null,
+   "catatan": "",
+   "portalId": {
+    "permasalahan_id": 66753,
+    "indikator_permasalahan_id": 77580
+   }
+  }
+ ],
+ "infografis": [
+  {
+   "id": "ig1",
+   "judul": "Capaian RB Triwulan III 2026",
+   "kategori": "Rilis capaian",
+   "tanggal": "2026-10-20",
+   "alt": "Contoh infografis capaian RB triwulan III",
+   "gambar": "",
+   "tampil": true
+  },
+  {
+   "id": "ig2",
+   "judul": "Apa itu RB General dan RB Tematik?",
+   "kategori": "Penjelasan",
+   "tanggal": "2026-09-02",
+   "alt": "Contoh infografis penjelasan RB",
+   "gambar": "",
+   "tampil": true
+  },
+  {
+   "id": "ig3",
+   "judul": "Langkah Pemprov menurunkan kemiskinan",
+   "kategori": "RB Tematik",
+   "tanggal": "2026-08-15",
+   "alt": "Contoh infografis RB Tematik kemiskinan",
+   "gambar": "",
+   "tampil": true
+  }
+ ],
+ "imporLog": [
+  {
+   "id": "log1",
+   "tanggal": "2026-10-14",
+   "periode": "Realisasi s.d. Triwulan III",
+   "baris": 70,
+   "oleh": "Admin (seed)"
+  }
+ ]
+}
